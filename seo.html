@@ -94,7 +94,7 @@
     }
   </style>
   </head>
-<body class="bg-surface text-on-surface">
+<body class="pb-32" class="bg-surface text-on-surface">
 <!-- TopAppBar -->
 <header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
 <div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
@@ -231,7 +231,7 @@
 <h2 class="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Готовы доминировать в выдаче?</h2>
 <p class="text-indigo-100 text-lg mb-10 max-w-xl mx-auto">Начните создавать контент, который нравится и людям, и поисковикам уже сегодня.</p>
 <div class="flex flex-col sm:flex-row justify-center gap-4">
-<button class="px-10 py-5 bg-white text-primary font-bold rounded-xl hover:scale-105 transition-transform">
+<button onclick="location.href='login.html'" class="px-10 py-5 bg-white text-primary font-bold rounded-xl hover:scale-105 transition-transform">
                             Попробовать бесплатно
                         </button>
 <button class="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-xl hover:bg-white/20 transition-all">
@@ -288,4 +288,11 @@
 <p class="text-slate-500 dark:text-slate-400 text-sm font-inter">© 2024 PrecisionAI. Built for precision.</p>
 </div>
 </footer>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#ffffff] shadow-[0_-8px_32px_-4px_rgba(25,28,33,0.06)] rounded-t-3xl z-50">
+<a class="flex flex-col items-center justify-center bg-[#f2f3fb] text-[#005FB8] rounded-2xl px-5 py-1.5 transition-all active:scale-90 duration-150" href="index.html"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Обзор</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="posts.html"><span class="material-symbols-outlined">article</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Контент</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="plan.html"><span class="material-symbols-outlined">event_repeat</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">План</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="analytics.html"><span class="material-symbols-outlined">analytics</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Статистика</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="accounts.html"><span class="material-symbols-outlined">settings</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Настройки</span></a>
+</nav>
 </body></html>

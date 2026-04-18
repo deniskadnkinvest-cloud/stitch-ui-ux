@@ -90,7 +90,7 @@
     }
   </style>
   </head>
-<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col items-center justify-center overflow-x-hidden">
+<body class="pb-32" class="bg-surface font-body text-on-surface min-h-screen flex flex-col items-center justify-center overflow-x-hidden">
 <!-- Content Architect Shell Suppression: No TopAppBar or BottomNavBar on Auth screens -->
 <main class="w-full max-w-4xl px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 <!-- Left Column: Branding and Message -->
@@ -196,4 +196,11 @@
 <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px]"></div>
 <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-tertiary/5 blur-[120px]"></div>
 </div>
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#ffffff] shadow-[0_-8px_32px_-4px_rgba(25,28,33,0.06)] rounded-t-3xl z-50">
+<a class="flex flex-col items-center justify-center bg-[#f2f3fb] text-[#005FB8] rounded-2xl px-5 py-1.5 transition-all active:scale-90 duration-150" href="index.html"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">dashboard</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Обзор</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="posts.html"><span class="material-symbols-outlined">article</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Контент</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="plan.html"><span class="material-symbols-outlined">event_repeat</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">План</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="analytics.html"><span class="material-symbols-outlined">analytics</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Статистика</span></a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="accounts.html"><span class="material-symbols-outlined">settings</span><span class="font-['Inter'] text-[11px] font-medium tracking-wide">Настройки</span></a>
+</nav>
 </body></html>
