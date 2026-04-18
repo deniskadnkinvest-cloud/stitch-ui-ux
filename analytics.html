@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Контент Завод - Аналитика</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e1e2ea",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c2c6d4",
+                        "surface-container-highest": "#e1e2ea",
+                        "secondary-fixed-dim": "#b8c9d8",
+                        "surface": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c21",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#50606d",
+                        "on-tertiary-fixed": "#3b0900",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#394955",
+                        "on-background": "#191c21",
+                        "surface-container": "#ecedf6",
+                        "background": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbd1",
+                        "primary": "#00488d",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a8c8ff",
+                        "on-primary-fixed-variant": "#00468b",
+                        "secondary-container": "#d1e2f1",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "surface-bright": "#f9f9ff",
+                        "inverse-on-surface": "#eff0f8",
+                        "on-primary-fixed": "#001b3d",
+                        "on-secondary-fixed": "#0d1d28",
+                        "on-surface-variant": "#424752",
+                        "surface-tint": "#005db5",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "outline": "#727783",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#b33000",
+                        "tertiary": "#892300",
+                        "on-tertiary-fixed-variant": "#862200",
+                        "inverse-primary": "#a8c8ff",
+                        "surface-container-high": "#e7e8f0",
+                        "surface-dim": "#d8dae2",
+                        "surface-container-low": "#f2f3fb",
+                        "secondary-fixed": "#d4e5f4",
+                        "on-tertiary-container": "#ffd1c5",
+                        "on-primary-container": "#cadcff",
+                        "inverse-surface": "#2e3036",
+                        "primary-container": "#005fb8",
+                        "on-secondary-container": "#556572"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface mb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff]/80 dark:bg-[#191c21]/80 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#44474e] dark:text-[#c2c6d4] active:scale-95 duration-200 p-2 rounded-full hover:bg-[#f2f3fb] dark:hover:bg-[#e1e2ea]">
+                grid_view
+            </button>
+<span class="text-xl font-extrabold text-[#191c21] dark:text-[#f9f9ff] tracking-tight font-['Manrope']">Контент Завод</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden bg-surface-container-high ring-2 ring-primary/10">
+<img alt="User profile avatar" data-alt="professional corporate headshot of a creative director in a minimalist studio setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUHASLIolcaMkav7FdTKmvQIj4ZgQDyedz-pgHnt-LIh2iuYTS5dUCbWRL2l06bl-zHA_CZTa3J3qEdEKrjJCJgT-wr5fnUOSffhEBs54SkROxXpjMfshNDp5SCc0lXEyjZJ8tGQ3LCuanNFyFG1GAwRaq-gpnc10M6micnv-5t0b_bpaHnwmJxUrQri9fnGW4xupnUIk7-v2G6cqylvPAQ6wwuPC0eriMtSWY80Ud2bfnGFp4XEaD103mUhdP2wDNXfTrK_bOKII"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Analytics Header -->
+<section class="mb-12">
+<h1 class="text-5xl font-extrabold tracking-tight mb-2 text-on-surface">Статистика</h1>
+<p class="text-on-surface-variant font-medium">Общий обзор эффективности по всем каналам за последние 30 дней.</p>
+</section>
+<!-- Bento Grid for Global Metrics -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+<div class="md:col-span-2 bg-surface-container-low p-8 rounded-[2rem] flex flex-col justify-between">
+<div>
+<span class="text-sm font-semibold uppercase tracking-widest text-primary/60 mb-2 block">Общий Охват</span>
+<div class="text-6xl font-extrabold tracking-tighter text-on-surface">1.2M</div>
+</div>
+<div class="mt-8 flex items-center gap-2">
+<span class="text-tertiary font-bold">+12.4%</span>
+<span class="text-on-surface-variant text-sm">выше прошлого периода</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] flex flex-col justify-between shadow-[0_8px_32px_-4px_rgba(25,28,33,0.06)]">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">article</span>
+<div>
+<div class="text-3xl font-bold text-on-surface">482</div>
+<span class="text-sm text-on-surface-variant">Всего постов</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] flex flex-col justify-between shadow-[0_8px_32px_-4px_rgba(25,28,33,0.06)]">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">forum</span>
+<div>
+<div class="text-3xl font-bold text-on-surface">12.8k</div>
+<span class="text-sm text-on-surface-variant">Комментариев</span>
+</div>
+</div>
+</div>
+<!-- Platform Sections -->
+<div class="space-y-16">
+<!-- Instagram -->
+<section>
+<div class="flex items-center gap-3 mb-8">
+<div class="w-2 h-8 bg-gradient-to-b from-primary to-primary-container rounded-full"></div>
+<h2 class="text-3xl font-bold">Instagram</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Content Feed Card (Asymmetric) -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-[2.5rem] overflow-hidden flex flex-col md:flex-row shadow-[0_8px_32px_-4px_rgba(25,28,33,0.06)]">
+<div class="p-10 flex-1">
+<h3 class="text-2xl font-bold mb-4">Лучший пост месяца</h3>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Стратегия роста через Reels показала конверсию в 18% среди новой аудитории.</p>
+<div class="flex gap-8">
+<div>
+<span class="block text-xs font-bold text-outline uppercase tracking-tighter">Охват</span>
+<span class="text-xl font-bold">45.2k</span>
+</div>
+<div>
+<span class="block text-xs font-bold text-outline uppercase tracking-tighter">Лайки</span>
+<span class="text-xl font-bold">3.1k</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-64 h-64 md:h-auto shrink-0 relative">
+<img alt="Instagram top post" class="w-full h-full object-cover" data-alt="vibrant abstract digital art with neon gradients and floating geometric shapes representing modern social media energy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa3pP9RQoGu4lPtpZ7kHkvSjWHu-3gVyagzQ03kvknTWmfXnYNGqla8O3JfvDtnl8_vU3Cn9yehq8A7SPT76GKlTcMyFeBmSz0TIXJQeaTm5FXU3gsU_-ukO5uOhmiln0gPBHL16GnFgwcM7WdBjz30ZrcPFFeEUQ2_MFRHwLsqBxwZdqlG2HQ46kgFhl9qZFCxxZSsKphD3Ceg_Qosn5omMZHidmTSmNkSejxGMS_qaZVbp8AoOdDnV3W6OnqhqzFJmP5Pkhn1Nc"/>
+<div class="absolute top-4 right-0 bg-primary px-4 py-1 text-on-primary text-xs font-bold rounded-l-full">HOT</div>
+</div>
+</div>
+<!-- Metric Blocks -->
+<div class="space-y-6">
+<div class="bg-surface-container-low p-8 rounded-[2rem] flex items-center justify-between">
+<div>
+<div class="text-2xl font-bold">15.4k</div>
+<span class="text-sm text-on-surface-variant">Просмотры Stories</span>
+</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">analytics</span>
+</div>
+<div class="bg-surface-container-low p-8 rounded-[2rem] flex items-center justify-between">
+<div>
+<div class="text-2xl font-bold">2.1%</div>
+<span class="text-sm text-on-surface-variant">ER (Вовлеченность)</span>
+</div>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+</div>
+</div>
+</section>
+<!-- YouTube -->
+<section>
+<div class="flex items-center gap-3 mb-8">
+<div class="w-2 h-8 bg-tertiary rounded-full"></div>
+<h2 class="text-3xl font-bold">YouTube</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-surface-container-low p-10 rounded-[2rem] col-span-1 md:col-span-2 flex justify-between items-end relative overflow-hidden">
+<div class="relative z-10">
+<span class="text-sm font-bold text-tertiary mb-2 block uppercase tracking-widest">Просмотры</span>
+<div class="text-5xl font-extrabold tracking-tighter">248.9k</div>
+<div class="mt-4 flex gap-1 h-12 items-end">
+<div class="w-3 bg-tertiary/20 h-4 rounded-full"></div>
+<div class="w-3 bg-tertiary/20 h-6 rounded-full"></div>
+<div class="w-3 bg-tertiary/40 h-10 rounded-full"></div>
+<div class="w-3 bg-tertiary/60 h-8 rounded-full"></div>
+<div class="w-3 bg-tertiary h-12 rounded-full"></div>
+</div>
+</div>
+<span class="material-symbols-outlined text-[120px] absolute -right-4 -bottom-4 opacity-5 text-tertiary">play_circle</span>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0_8px_32px_-4px_rgba(25,28,33,0.06)]">
+<span class="text-xs font-bold text-outline uppercase block mb-4">Часы просмотра</span>
+<div class="text-4xl font-bold mb-2">1.2k</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary w-3/4 h-full"></div>
+</div>
+<span class="text-[11px] text-on-surface-variant mt-2 block">75% от цели на месяц</span>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0_8px_32px_-4px_rgba(25,28,33,0.06)]">
+<span class="text-xs font-bold text-outline uppercase block mb-4">Новые подписчики</span>
+<div class="text-4xl font-bold mb-2">+412</div>
+<div class="flex items-center gap-1 text-tertiary text-xs font-bold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span>8% рост</span>
+</div>
+</div>
+</div>
+</section>
+<!-- TikTok -->
+<section>
+<div class="flex items-center gap-3 mb-8">
+<div class="w-2 h-8 bg-on-surface rounded-full"></div>
+<h2 class="text-3xl font-bold">TikTok</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Glassmorphism Card for TikTok Trends -->
+<div class="bg-[#191c21]/90 backdrop-blur-2xl p-10 rounded-[2.5rem] md:col-span-2 text-[#f9f9ff]">
+<h3 class="text-2xl font-bold mb-6">Виральные показатели</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div>
+<span class="text-[10px] uppercase font-bold text-[#c2c6d4]">Репосты</span>
+<div class="text-3xl font-extrabold mt-1">12.5k</div>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-[#c2c6d4]">Сохранения</span>
+<div class="text-3xl font-extrabold mt-1">8.9k</div>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-[#c2c6d4]">Дуэты</span>
+<div class="text-3xl font-extrabold mt-1">452</div>
+</div>
+<div>
+<span class="text-[10px] uppercase font-bold text-[#c2c6d4]">Звуки</span>
+<div class="text-3xl font-extrabold mt-1">1.2k</div>
+</div>
+</div>
+<div class="mt-10 pt-8 border-t border-[#f9f9ff]/10 flex items-center justify-between">
+<div class="flex -space-x-3">
+<div class="w-8 h-8 rounded-full border-2 border-[#191c21] overflow-hidden"><img alt="User" data-alt="portrait of a young creative professional with a friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD13i941EBsjpp0frQA1nzlWfg8rfyBH8t1jqW3KUWDzJRlHhJxnRaMlfwSKB3gWHOtzd9WpQ_iSu9dgigWxsleOnEcRAM_zKFaWIBbjRkWTd5zeR6N_Na41w3-ajnWTHCpNxjdv-Q2yfd8VCDvyU4OvTDbQ8rNVCBV6yX-Pyw0FjIpnRT1d2jNqOYKjhj1SaN373DpmTxkzB_aJXQQaSKE65JgByd9zFiGymKQWJJVmg9BAKZqicuWo6J075gfjHRjDn9GJrFsyxw"/></div>
+<div class="w-8 h-8 rounded-full border-2 border-[#191c21] overflow-hidden"><img alt="User" data-alt="portrait of a smiling woman in a bright workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV4KKOl8pkMo5l3pnysFT4rZWXrPNW9XPXcMKGJuchWZr8kVYG0KJ5JNPREdm8uy1oJ3WcJf_aOq-ds-LhSsLERx6SJHrfPT9Qk2bmo-uqOfCCzFWS1mxqbhiYEmHwjRLBcAueaWl-w0LBlgdYNORtAIm2JKPUQzyc203iDnJg4HDbWFq9JM4mZwoIBCEGBBbH8IzpR7Bg2IwGLE3cuEGbd4NXSL1IE-l4H6EFe-NdaSiLvVvwnSNncVga9ICukDugf7kClvepjZM"/></div>
+<div class="w-8 h-8 rounded-full border-2 border-[#191c21] overflow-hidden bg-primary-container flex items-center justify-center text-[10px] font-bold">+18</div>
+</div>
+<span class="text-sm font-medium opacity-60">Аудитория активно использует ваш звук</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-[2rem] flex flex-col justify-center items-center text-center">
+<div class="w-20 h-20 rounded-full bg-on-surface/5 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="text-4xl font-bold">38.2M</div>
+<span class="text-sm text-on-surface-variant font-medium mt-1">Общие лайки</span>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Appears on Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#ffffff] dark:bg-[#1c1b1f] rounded-t-3xl z-50 shadow-[0_-8px_32px_-4px_rgba(25,28,33,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Обзор</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">article</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Контент</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">event_repeat</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">План</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#f2f3fb] dark:bg-[#e1e2ea] text-[#005FB8] rounded-2xl px-5 py-1.5 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Статистика</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Настройки</span>
+</a>
+</nav>
+<!-- Desktop Navigation Side Anchors (Implicit from Brand Identity) -->
+<div class="hidden md:flex fixed right-8 top-1/2 -translate-y-1/2 flex-col gap-6 z-40">
+<button class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-95">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="w-12 h-12 bg-surface-container-highest text-on-surface rounded-full flex items-center justify-center hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined">download</span>
+</button>
+</div>
+</body></html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#575992",
+                    "error": "#ba1a1a",
+                    "secondary-container": "#bdbefe",
+                    "on-secondary": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#494bd6",
+                    "on-tertiary-container": "#fffbff",
+                    "inverse-primary": "#c0c1ff",
+                    "primary-fixed": "#e1e0ff",
+                    "secondary-fixed-dim": "#c0c1ff",
+                    "primary": "#4648d4",
+                    "surface-dim": "#d8dae0",
+                    "secondary-fixed": "#e1e0ff",
+                    "tertiary": "#904900",
+                    "on-secondary-fixed-variant": "#404178",
+                    "surface-container-low": "#f2f3f9",
+                    "surface-container": "#eceef3",
+                    "on-surface-variant": "#464554",
+                    "on-surface": "#191c20",
+                    "inverse-surface": "#2e3135",
+                    "primary-container": "#6063ee",
+                    "on-primary-container": "#fffbff",
+                    "on-tertiary-fixed": "#301400",
+                    "surface-container-high": "#e7e8ee",
+                    "on-background": "#191c20",
+                    "surface-bright": "#f8f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#eff0f6",
+                    "surface-variant": "#e1e2e8",
+                    "surface-container-highest": "#e1e2e8",
+                    "tertiary-container": "#b55d00",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "on-tertiary-fixed-variant": "#703700",
+                    "on-secondary-container": "#494b83",
+                    "outline-variant": "#c7c4d7",
+                    "on-secondary-fixed": "#13144a",
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f8f9ff",
+                    "tertiary-fixed-dim": "#ffb783",
+                    "tertiary-fixed": "#ffdcc5",
+                    "outline": "#767586",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-primary-fixed": "#07006c",
+                    "on-primary": "#ffffff",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ghost-border {
+            border: 1px solid rgba(199, 196, 215, 0.15);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Header (TopAppBar) -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-indigo-600 dark:text-indigo-400" data-icon="architecture">architecture</span>
+<span class="text-xl font-black text-slate-900 dark:text-white tracking-tighter">PrecisionAI</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-indigo-600 dark:text-indigo-400 font-semibold border-b-2 border-indigo-600" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-indigo-500 transition-colors" href="#">Expert</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-indigo-500 transition-colors" href="#">Pricing</a>
+</nav>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2.5 rounded-xl font-semibold scale-95 active:scale-90 transition-transform">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-surface py-24 md:py-32">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="max-w-4xl">
+<span class="inline-flex items-center px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-xs font-bold tracking-widest uppercase mb-6">
+                        Alternative Choice
+                    </span>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                        Искали «контент завод»? Вот альтернатива — с ценами и живыми примерами
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-2xl mb-12 font-medium leading-relaxed">
+                        PrecisionAI — это не просто поток текстов. Это архитектурно выверенный контент-маркетинг, усиленный интеллектом и экспертизой.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
+                            Смотреть цены и примеры
+                        </button>
+<button class="bg-surface-container-lowest text-on-surface px-8 py-4 rounded-xl font-bold ghost-border hover:bg-surface-container-low transition-colors">
+                            Наши кейсы
+                        </button>
+</div>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover" data-alt="abstract technological architecture with glowing blue lines and geometric precision patterns on a clean light background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2XdOoBvq2hcZr0xGW4GVnEe17qBESIssdEWpyEtCwJK3Rh5N_ZtLnPyQ5LKQinUkPsN6gjdno0r2XBqMk2g0AdrrYhDvSmSGhXTWhTyFXLTZ_iP4HRvQ-0qALaHkFYfGsRLjUNY2vnUtkylUwKEX4eU0gFe6wW87UEkGkS1Sx0B9kriM4CI-tiz4IMeOmK7Viuka79TtoX1sPpfTWFm0C5Ej_NIQTco9qdIS0kOpYQ1lfpWoGDPUsFZiWzo11_RV_8ZwVikVMMTY"/>
+</div>
+</section>
+<!-- Feature Comparison (Immediately under Hero) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl font-bold tracking-tight mb-4">Почему мы лучше «заводов»?</h2>
+<p class="text-on-surface-variant">Сравнение подхода к качеству и процессам</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high/50">
+<th class="p-6 font-bold text-on-surface">Характеристика</th>
+<th class="p-6 font-bold text-on-surface-variant">Контент-заводы</th>
+<th class="p-6 font-bold text-primary">PrecisionAI</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">Глубина погружения</td>
+<td class="p-6 text-on-surface-variant">Поверхностный рерайт</td>
+<td class="p-6 font-medium">Экспертные интервью и аудит</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">SEO-оптимизация</td>
+<td class="p-6 text-on-surface-variant">Спам ключевыми словами</td>
+<td class="p-6 font-medium">LSI-моделирование и структура</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">Авторы</td>
+<td class="p-6 text-on-surface-variant">Случайные фрилансеры</td>
+<td class="p-6 font-medium">Профильные редакторы-эксперты</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-6 font-semibold">Проверка фактов</td>
+<td class="p-6 text-on-surface-variant">Отсутствует</td>
+<td class="p-6 font-medium">Двухуровневый фактчекинг</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Pricing Table (Moved to 3rd Position) -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold tracking-tight mb-4">Прозрачное ценообразование</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Никаких скрытых платежей. Платите за результат, а не за символы без пробелов.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Basic -->
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col hover:shadow-xl transition-all group">
+<div class="mb-8">
+<h3 class="text-xl font-bold mb-2">Старт</h3>
+<div class="text-4xl font-black text-on-surface mb-2">25 000 ₽ <span class="text-sm font-medium text-on-surface-variant">/ мес</span></div>
+<p class="text-sm text-on-surface-variant">Для малого бизнеса и личных блогов</p>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                4 статьи в месяц
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                Базовое SEO
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                Дизайн обложек
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-xl font-bold bg-surface-container-lowest text-on-surface group-hover:bg-primary group-hover:text-white transition-all">Выбрать тариф</button>
+</div>
+<!-- Pro (Featured) -->
+<div class="p-8 rounded-2xl bg-surface-container-lowest shadow-2xl shadow-primary/10 border-2 border-primary relative flex flex-col scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Популярный</div>
+<div class="mb-8">
+<h3 class="text-xl font-bold mb-2">Бизнес</h3>
+<div class="text-4xl font-black text-on-surface mb-2">65 000 ₽ <span class="text-sm font-medium text-on-surface-variant">/ мес</span></div>
+<p class="text-sm text-on-surface-variant">Комплексный контент-маркетинг</p>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                12 статей + 2 лонгрида
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Продвинутая аналитика
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Дистрибуция в соцсетях
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                                Личный редактор
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-xl font-bold bg-primary text-white hover:bg-primary-container transition-all">Выбрать тариф</button>
+</div>
+<!-- Enterprise -->
+<div class="p-8 rounded-2xl bg-surface-container-low flex flex-col hover:shadow-xl transition-all group">
+<div class="mb-8">
+<h3 class="text-xl font-bold mb-2">Эксперт</h3>
+<div class="text-4xl font-black text-on-surface mb-2">120 000 ₽ <span class="text-sm font-medium text-on-surface-variant">/ мес</span></div>
+<p class="text-sm text-on-surface-variant">Для крупных IT-компаний</p>
+</div>
+<ul class="space-y-4 mb-10 flex-grow">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                Безлимитный контент
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                Стратегия "Thought Leadership"
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span>
+                                PR-сопровождение
+                            </li>
+</ul>
+<button class="w-full py-4 rounded-xl font-bold bg-surface-container-lowest text-on-surface group-hover:bg-primary group-hover:text-white transition-all">Связаться с нами</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Examples (Bento Grid) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl font-bold tracking-tight mb-4">Живые примеры</h2>
+<p class="text-on-surface-variant">Посмотрите, как мы решаем реальные задачи бизнеса</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[250px]">
+<!-- Large Card -->
+<div class="md:col-span-8 md:row-span-2 bg-surface-container-lowest rounded-3xl overflow-hidden relative group">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="professional modern office workspace with high-end tech equipment and clean white aesthetics representing corporate excellence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBMXFPXuXLTjNEecfXO6gwmShFR1XrExrHSXMM3mx7mwqfKCl_fq-ZWEDjZyEjcMT9GZWSJLGBHt8CSPxrEBsqazmUIFHLX-Ipb_M7m6vh3Wi4hn1VoZOfnUoSq3DP5d7PT_fnAuPkxxQ5GhirpBAxvKXePoblwJm9RfPiM2HBOLBMuny6yJkMFghyqmjp4H-ooO6ykJSzZpYZbnSdKqFV5rQFJcHYbc3j0DyfVDv0Rixwv7UN8u5qtsDfIUfe8t8Bp5XnAPvIONQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/90 via-on-surface/20 to-transparent p-10 flex flex-col justify-end">
+<span class="text-primary-fixed font-bold text-xs uppercase mb-2">SaaS Case Study</span>
+<h3 class="text-white text-3xl font-bold mb-4">Как мы увеличили органику для CRM системы в 3 раза за полгода</h3>
+<button class="flex items-center gap-2 text-white font-bold group">
+                                Читать кейс
+                                <span class="material-symbols-outlined transition-transform group-hover:translate-x-2" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Small Card 1 -->
+<div class="md:col-span-4 md:row-span-1 bg-primary rounded-3xl p-8 flex flex-col justify-between text-white">
+<span class="material-symbols-outlined text-4xl" data-icon="auto_awesome">auto_awesome</span>
+<div>
+<h4 class="text-xl font-bold mb-1">AI-Ассистент</h4>
+<p class="text-primary-fixed/80 text-sm">Собственная разработка для первичного анализа данных</p>
+</div>
+</div>
+<!-- Small Card 2 -->
+<div class="md:col-span-4 md:row-span-1 bg-surface-container-lowest rounded-3xl p-8 flex flex-col justify-between shadow-sm">
+<div class="flex -space-x-2">
+<img class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a professional editor with focused expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHPgAl0TsQrBLDji9Icsfk7Pu47_6JihtFz8qW06UA8LfgLtHkj5z8dO185U_DhJJptr9UyGT90EHiPsNWpjbEn41onDBq-2-OF77Y4CrGWecy-Y7V3elbd0gwyOY1pdyuDmz6Z7xdrjFfS2Mk7iWRxdOeqWKvUgBeTJePe9k7NS0MczejEcsVSDX8RiyhhUWYmyptlTLaWXyjpNgDigUyjXQFDzjC7CQ9_YJDO6II_UfPP9oe9kWJB7FgiZPRUhWY3oBQGaIFYvY"/>
+<img class="w-10 h-10 rounded-full border-2 border-white object-cover" data-alt="portrait of a female creative writer smiling in a professional setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXWJ2ucsb-cvCprBq80xPEWD9zXhDh2V6S2YyXC-kMv_b7adp7w3nLFhvfagNs1-sjPfmCy-WODFSAkMs22RbEFEYAOBTq70rkj0SN05o3zdhLfPSJEF5yBLXNORyx_4tb6izfhwquVjVmmLvajmcYqrmCaKOCBIiCUCyESq-IxVGo_FA-ECYiwGel2rkrrN3YVqzvmL7mzVMnt2g4FgnSTHuCtUAps2sNG13NbjYraJ1L610161fgjE_ZVS21bfq-0DuujAMazps"/>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-xs font-bold">+12</div>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-1">Команда профи</h4>
+<p class="text-on-surface-variant text-sm">Редакторы с опытом в FinTech, EdTech и BioTech</p>
+</div>
+</div>
+<!-- Long Vertical Card -->
+<div class="md:col-span-4 md:row-span-2 bg-secondary text-white rounded-3xl overflow-hidden relative">
+<div class="p-8 relative z-10 h-full flex flex-col justify-between">
+<h3 class="text-2xl font-bold">Почему PrecisionAI?</h3>
+<ul class="space-y-6">
+<li class="flex gap-4">
+<span class="material-symbols-outlined shrink-0" data-icon="verified">verified</span>
+<div>
+<p class="font-bold">100% Уникальность</p>
+<p class="text-sm opacity-70">Проверка через 5 сервисов</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined shrink-0" data-icon="timer">timer</span>
+<div>
+<p class="font-bold">Соблюдение дедлайнов</p>
+<p class="text-sm opacity-70">Штрафы за каждый час просрочки</p>
+</div>
+</li>
+<li class="flex gap-4">
+<span class="material-symbols-outlined shrink-0" data-icon="hub">hub</span>
+<div>
+<p class="font-bold">Дистрибуция</p>
+<p class="text-sm opacity-70">Размещаем контент за вас</p>
+</div>
+</li>
+</ul>
+<div class="pt-6">
+<button class="bg-white text-secondary w-full py-4 rounded-xl font-bold">Оставить заявку</button>
+</div>
+</div>
+</div>
+<!-- Horizontal Medium Card -->
+<div class="md:col-span-8 md:row-span-1 bg-white rounded-3xl p-8 flex items-center gap-8 shadow-sm">
+<div class="w-24 h-24 bg-surface-container-low rounded-2xl flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="monitoring">monitoring</span>
+</div>
+<div>
+<h4 class="text-xl font-bold mb-2">Аналитический отчет в подарок</h4>
+<p class="text-on-surface-variant text-sm max-w-md">При первом заказе проведем полный аудит вашего текущего контента и составим стратегию на 3 месяца бесплатно.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-primary-container rounded-[2.5rem] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="absolute top-0 right-0 p-10 opacity-20 transform translate-x-1/4 -translate-y-1/4">
+<span class="material-symbols-outlined text-[15rem]" data-icon="campaign" style="font-variation-settings: 'FILL' 1;">campaign</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-bold text-white mb-8 tracking-tight">Готовы масштабировать свой контент правильно?</h2>
+<p class="text-white/80 text-xl mb-12 max-w-2xl mx-auto">Закажите пробную статью и почувствуйте разницу между «заводом» и прецизионным подходом.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg shadow-xl shadow-black/5 hover:scale-105 transition-transform">
+                                Начать сотрудничество
+                            </button>
+<button class="bg-primary text-white border border-white/20 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-white/10 transition-colors">
+                                Посмотреть портфолио
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-16 px-8 mt-24">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 max-w-7xl mx-auto font-inter text-sm body-sm">
+<div class="col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-indigo-600" data-icon="architecture">architecture</span>
+<span class="text-lg font-bold text-slate-900 dark:text-white">PrecisionAI</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 mb-6 max-w-xs leading-relaxed">
+                    © 2024 PrecisionAI. Built for precision. Мы создаем контент, который работает на бизнес, а не просто занимает место на странице.
+                </p>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4">Solutions</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Expert Content</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">SEO Strategy</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Audit</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4">Company</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Expert</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">SEO</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Pricing</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4">Legal</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Terms</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Privacy</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Cookies</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4">Support</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">FAQ</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Competitors</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 transition-all opacity-80 hover:opacity-100" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Контент Завод - Планирование</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e1e2ea",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c2c6d4",
+                        "surface-container-highest": "#e1e2ea",
+                        "secondary-fixed-dim": "#b8c9d8",
+                        "surface": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c21",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#50606d",
+                        "on-tertiary-fixed": "#3b0900",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#394955",
+                        "on-background": "#191c21",
+                        "surface-container": "#ecedf6",
+                        "background": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbd1",
+                        "primary": "#00488d",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a8c8ff",
+                        "on-primary-fixed-variant": "#00468b",
+                        "secondary-container": "#d1e2f1",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "surface-bright": "#f9f9ff",
+                        "inverse-on-surface": "#eff0f8",
+                        "on-primary-fixed": "#001b3d",
+                        "on-secondary-fixed": "#0d1d28",
+                        "on-surface-variant": "#424752",
+                        "surface-tint": "#005db5",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "outline": "#727783",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#b33000",
+                        "tertiary": "#892300",
+                        "on-tertiary-fixed-variant": "#862200",
+                        "inverse-primary": "#a8c8ff",
+                        "surface-container-high": "#e7e8f0",
+                        "surface-dim": "#d8dae2",
+                        "surface-container-low": "#f2f3fb",
+                        "secondary-fixed": "#d4e5f4",
+                        "on-tertiary-container": "#ffd1c5",
+                        "on-primary-container": "#cadcff",
+                        "inverse-surface": "#2e3036",
+                        "primary-container": "#005fb8",
+                        "on-secondary-container": "#556572"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-gradient {
+            background: linear-gradient(135deg, #00488d 0%, #005fb8 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#f9f9ff]/80 backdrop-blur-xl fixed top-0 w-full z-50 flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#44474e] active:scale-95 duration-200 p-2 hover:bg-[#f2f3fb] rounded-full">grid_view</button>
+<h1 class="font-['Manrope'] font-extrabold text-xl tracking-tight text-[#191c21]">Контент Завод</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden border-2 border-surface">
+<img alt="User Profile" data-alt="Close-up professional headshot of a creative director in a studio with soft cinematic lighting and neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJFYSKFAASuHlAUGyh3hnt4ida0GwJpq2zle6awk19OTcWs7nlTSgskQuAm8UQnndcrF7_mDwam7p9b8y87ikJ6-XCAV6ApKJmrjmc3UcXJRiQJk4LGfbNjsPZQhlOJ9HgmA--QJalEAZKG2_1RKR-U8nu6mwQRUSU8AmJwTyEHVRYwabJQAivOZ06_h5JoJO6BylnDr0uiv8doEi_2ztWsbixFzn8YTSeFuk7rAL81TH7aPnL-zlIL67q4VsvU4GsANTC1xon-zc"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section & FAB Action -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
+<div>
+<span class="font-label text-primary font-semibold tracking-wider text-xs uppercase mb-2 block">Календарь медиа</span>
+<h2 class="font-headline text-5xl font-extrabold tracking-tighter text-on-surface">План контента</h2>
+</div>
+<button class="editorial-gradient text-on-primary px-8 py-4 rounded-xl font-headline font-bold flex items-center gap-3 shadow-[0_8px_32px_-4px_rgba(0,72,141,0.2)] active:scale-95 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">add_circle</span>
+                Запланировать пост
+            </button>
+</div>
+<!-- Filters Section - Using Ghost Borders & Tonal Shifts -->
+<div class="bg-surface-container-low rounded-3xl p-6 mb-10 flex flex-wrap gap-6 items-center">
+<div class="flex-1 min-w-[240px]">
+<label class="block text-[11px] font-medium text-outline mb-2 px-1">Платформа</label>
+<div class="flex gap-2">
+<button class="bg-surface-container-lowest text-primary px-4 py-2 rounded-full text-sm font-medium border-b-2 border-primary">Все</button>
+<button class="bg-surface-container-lowest text-on-surface-variant px-4 py-2 rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">TikTok</button>
+<button class="bg-surface-container-lowest text-on-surface-variant px-4 py-2 rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">Instagram</button>
+<button class="bg-surface-container-lowest text-on-surface-variant px-4 py-2 rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">Telegram</button>
+</div>
+</div>
+<div class="w-px h-12 bg-outline-variant/30 hidden md:block"></div>
+<div class="flex-1 min-w-[240px]">
+<label class="block text-[11px] font-medium text-outline mb-2 px-1">Статус публикации</label>
+<div class="flex gap-2">
+<button class="bg-surface-container-lowest text-on-surface-variant px-4 py-2 rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">Опубликовано</button>
+<button class="bg-surface-container-lowest text-primary px-4 py-2 rounded-full text-sm font-medium border-b-2 border-primary">Запланировано</button>
+<button class="bg-surface-container-lowest text-on-surface-variant px-4 py-2 rounded-full text-sm font-medium hover:bg-surface-variant transition-colors">Черновики</button>
+</div>
+</div>
+</div>
+<!-- Content Feed - Asymmetric Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Content Feed Card 1 -->
+<div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden flex flex-col transition-all hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden">
+<img alt="TikTok Content" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern minimalist aesthetic lifestyle photo with soft shadows and pastel blue color palette for social media content" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ_-Yh0YcRi6XbdRE2g5IitssIHO6lWMG08pwdRhMDBmp1MEw8jLC-I6a5nbKQe5iR3CO2_LQ9HziFi85tTsH9zOf4kosXVrxtiJqyO0PRxaoU8mFTYEXi0NvT-xaYB8aktIaxJ-DvXZAJE2J-5Yn0gf_8Gd20aj_qCfXQrJpg-8L_86uhgg78ACz2cQ9Y5ggaGw9hu_Ab-yWP1dM4H9TFeg3__OdsdOHdQQWRLBdE9NhVfSXewHtILtLc589wVMsdPJV8P64HQkM"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-[11px] font-bold text-on-surface">14:00 • СЕГОДНЯ</span>
+</div>
+<div class="absolute -right-4 top-4 bg-tertiary text-on-tertiary px-6 py-1 rotate-12 font-headline font-black text-xs tracking-widest shadow-lg">
+                        TIKTOK
+                    </div>
+</div>
+<div class="p-8 pb-10">
+<h3 class="font-headline text-xl font-bold mb-3 leading-tight">Тренды дизайна 2024: Как ИИ меняет интерфейсы</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2 font-body mb-6">Разбираем ключевые изменения в визуальном языке мобильных приложений...</p>
+<div class="flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-surface-container-high"></div>
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-primary-container"></div>
+</div>
+<button class="material-symbols-outlined text-outline hover:text-primary transition-colors">more_horiz</button>
+</div>
+</div>
+</div>
+<!-- Content Feed Card 2 -->
+<div class="group bg-surface-container-lowest rounded-[2rem] overflow-hidden flex flex-col transition-all hover:translate-y-[-4px]">
+<div class="relative h-64 overflow-hidden">
+<img alt="Instagram Content" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end editorial fashion photography of a model in architectural setting with dramatic high-contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmnKkNb1HQfSEs2AqIOy5co1D4QgX-1b5uvsJeK_WQsB-hjkt_Sf9JR011w9BgV4Xu9dpGhkkCQdvSWt7sHEGlk2I7F2b-o5NKXZ-V-nwoQUR1heoMsYtvA-CBBxsw2Vn-ms4W2IQbcrfS9Dk4h9dsAfdgnFuEVzo6XZY598wzrhMQwpbYbET3t47C70pyfAGkNixgwXBsg60o5FWo3izdpWre_RpHsvfj7kmvkLA9-nc8PDejqkJ_hXpxp649DvM414P0TMOQ1kA"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-[11px] font-bold text-on-surface">18:30 • ЗАВТРА</span>
+</div>
+<div class="absolute -right-4 top-4 bg-primary text-on-primary px-6 py-1 rotate-12 font-headline font-black text-xs tracking-widest shadow-lg">
+                        INSTA
+                    </div>
+</div>
+<div class="p-8 pb-10">
+<h3 class="font-headline text-xl font-bold mb-3 leading-tight">Бэкстейдж съемки новой коллекции "Curator"</h3>
+<p class="text-on-surface-variant text-sm line-clamp-2 font-body mb-6">Показываем процесс создания визуального контента в нашей студии.</p>
+<div class="flex items-center justify-between">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-surface-container-lowest bg-secondary-container"></div>
+</div>
+<button class="material-symbols-outlined text-outline hover:text-primary transition-colors">more_horiz</button>
+</div>
+</div>
+</div>
+<!-- Content Feed Card 3 (Text Focus) -->
+<div class="group bg-surface-container-low border-2 border-dashed border-outline-variant/30 rounded-[2rem] p-8 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="bg-surface-container-lowest px-3 py-1.5 rounded-full flex items-center gap-2">
+<span class="material-symbols-outlined text-xs text-primary">event_repeat</span>
+<span class="text-[11px] font-bold text-on-surface">22 СЕН • 10:00</span>
+</div>
+<span class="font-headline font-black text-xs text-outline tracking-widest">TELEGRAM</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 leading-tight italic">"Контент — это валюта цифровой эпохи. Управляйте ею мудро."</h3>
+<div class="bg-surface-container-lowest/50 p-4 rounded-xl">
+<p class="text-on-surface-variant text-sm font-body leading-relaxed">Утренний дайджест новостей индустрии. Подборка из 5 главных событий за неделю.</p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-6">
+<span class="text-[11px] font-medium text-outline uppercase tracking-widest">Черновик готов</span>
+<button class="bg-surface-container-lowest w-12 h-12 rounded-full flex items-center justify-center text-primary shadow-sm hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined">edit</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#ffffff] rounded-t-3xl z-50 shadow-[0_-8px_32px_-4px_rgba(25,28,33,0.06)] md:hidden">
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="index.html">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Обзор</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#f2f3fb] text-[#005FB8] rounded-2xl px-5 py-1.5 transition-all active:scale-90 duration-150" href="posts.html">
+<span class="material-symbols-outlined">article</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Контент</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="analytics.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_repeat</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">План</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="accounts.html">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Статистика</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Настройки</span>
+</a>
+</nav>
+<!-- Desktop Navigation Side Indicator (Floating Cluster) -->
+<div class="hidden md:flex fixed left-8 top-1/2 -translate-y-1/2 flex-col gap-6 bg-surface-container-low/50 backdrop-blur-md p-3 rounded-full border border-outline-variant/10">
+<div class="w-10 h-10 flex items-center justify-center text-outline hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">dashboard</span>
+</div>
+<div class="w-10 h-10 flex items-center justify-center text-outline hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">article</span>
+</div>
+<div class="w-10 h-10 flex items-center justify-center bg-primary text-on-primary rounded-full shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_repeat</span>
+</div>
+<div class="w-10 h-10 flex items-center justify-center text-outline hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+</div>
+</body></html>

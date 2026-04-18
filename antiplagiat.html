@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PrecisionAI — Anti-plagiarism &amp; Content Uniqueness</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#575992",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#bdbefe",
+                        "on-secondary": "#ffffff",
+                        "surface": "#f8f9ff",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#494bd6",
+                        "on-tertiary-container": "#fffbff",
+                        "inverse-primary": "#c0c1ff",
+                        "primary-fixed": "#e1e0ff",
+                        "secondary-fixed-dim": "#c0c1ff",
+                        "primary": "#4648d4",
+                        "surface-dim": "#d8dae0",
+                        "secondary-fixed": "#e1e0ff",
+                        "tertiary": "#904900",
+                        "on-secondary-fixed-variant": "#404178",
+                        "surface-container-low": "#f2f3f9",
+                        "surface-container": "#eceef3",
+                        "on-surface-variant": "#464554",
+                        "on-surface": "#191c20",
+                        "inverse-surface": "#2e3135",
+                        "primary-container": "#6063ee",
+                        "on-primary-container": "#fffbff",
+                        "on-tertiary-fixed": "#301400",
+                        "surface-container-high": "#e7e8ee",
+                        "on-background": "#191c20",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#eff0f6",
+                        "surface-variant": "#e1e2e8",
+                        "surface-container-highest": "#e1e2e8",
+                        "tertiary-container": "#b55d00",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "on-tertiary-fixed-variant": "#703700",
+                        "on-secondary-container": "#494b83",
+                        "outline-variant": "#c7c4d7",
+                        "on-secondary-fixed": "#13144a",
+                        "surface-container-lowest": "#ffffff",
+                        "background": "#f8f9ff",
+                        "tertiary-fixed-dim": "#ffb783",
+                        "tertiary-fixed": "#ffdcc5",
+                        "outline": "#767586",
+                        "on-primary-fixed-variant": "#2f2ebe",
+                        "on-primary-fixed": "#07006c",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9ff;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-indigo-600 dark:text-indigo-400 text-2xl" data-icon="architecture">architecture</span>
+<span class="text-xl font-black text-slate-900 dark:text-white tracking-tighter">PrecisionAI</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-indigo-600 dark:text-indigo-400 font-semibold border-b-2 border-indigo-600 py-1 transition-colors" href="#">Solutions</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors" href="#">Expert</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-indigo-500 dark:hover:text-indigo-300 transition-colors" href="#">Pricing</a>
+</nav>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2.5 rounded-xl font-semibold text-sm scale-95 active:scale-90 transition-transform">
+                Get Started
+            </button>
+</div>
+</header>
+<main class="pt-32 pb-16">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-primary-fixed text-on-primary-fixed rounded-full text-xs font-bold mb-6 tracking-wide">
+<span class="material-symbols-outlined text-sm" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+                        AI BYPASS TECHNOLOGY
+                    </div>
+<h1 class="text-5xl md:text-6xl font-extrabold text-on-surface leading-[1.1] tracking-tighter mb-8">
+                        Уникальный контент с ИИ — проходит <span class="text-primary">Text.ru</span> и <span class="text-primary">Advego</span> с первого раза
+                    </h1>
+<p class="text-on-surface-variant text-lg mb-10 max-w-xl leading-relaxed">
+                        Превращаем сгенерированный нейросетями текст в живой, глубокий контент. Забудьте о блокировках, SEO-санкциях и недоверии клиентов.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-primary hover:bg-primary-container text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-primary/20">
+                            Проверить уникальность бесплатно
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all">
+                            Как это работает
+                        </button>
+</div>
+</div>
+<!-- Mock Check Result Tool -->
+<div class="relative">
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 shadow-2xl shadow-indigo-100/50 border border-outline-variant/15 relative z-10 overflow-hidden">
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary" data-icon="content_paste_search">content_paste_search</span>
+</div>
+<div>
+<h3 class="font-bold text-sm">Результат проверки</h3>
+<p class="text-xs text-on-surface-variant">Анализ завершен 12 секунд назад</p>
+</div>
+</div>
+<div class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs font-bold">100% UNIQUE</div>
+</div>
+<div class="space-y-4 mb-8">
+<div class="p-4 bg-surface-container-low rounded-xl">
+<div class="flex justify-between text-xs font-bold mb-2 uppercase tracking-wider text-on-surface-variant">
+<span>Text.ru Bypass Rate</span>
+<span class="text-primary">99.4%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[99%]"></div>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl">
+<div class="flex justify-between text-xs font-bold mb-2 uppercase tracking-wider text-on-surface-variant">
+<span>Advego Humanizer</span>
+<span class="text-primary">98.1%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[98%]"></div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high/30 p-4 rounded-xl text-sm italic text-on-surface-variant border-l-4 border-primary">
+                            "Этот текст не имеет признаков генерации нейросетью. Стилистические маркеры соответствуют высококачественному авторскому письму..."
+                        </div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Pain Points Section (Bento Style) -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-extrabold tracking-tight mb-4">Почему стандартный ИИ-контент опасен?</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Прямое использование ChatGPT может разрушить ваш бизнес. Мы решаем главные проблемы автоматизации.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low p-10 rounded-[2rem] border border-outline-variant/15 flex flex-col justify-between group hover:bg-surface-container-lowest transition-all duration-300">
+<div>
+<div class="w-14 h-14 bg-error/10 text-error rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="block">block</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Блокировки (Bans)</h3>
+<p class="text-on-surface-variant leading-relaxed">Поисковые системы и рекламные кабинеты мгновенно распознают шаблоны GPT. PrecisionAI скрывает эти следы на уровне синтаксиса.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 rounded-[2rem] border border-outline-variant/15 flex flex-col justify-between group hover:bg-surface-container-lowest transition-all duration-300">
+<div>
+<div class="w-14 h-14 bg-primary/10 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="trending_down">trending_down</span>
+</div>
+<h3 class="text-xl font-bold mb-4">SEO Штрафы</h3>
+<p class="text-on-surface-variant leading-relaxed">Google и Яндекс понижают в выдаче сайты с "мусорным" ИИ-контентом. Мы возвращаем вашим текстам ценность для алгоритмов.</p>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 rounded-[2rem] border border-outline-variant/15 flex flex-col justify-between group hover:bg-surface-container-lowest transition-all duration-300">
+<div>
+<div class="w-14 h-14 bg-secondary/10 text-secondary rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" data-icon="person_cancel">person_cancel</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Недоверие клиентов</h3>
+<p class="text-on-surface-variant leading-relaxed">Люди чувствуют "синтетический" текст. Наши алгоритмы внедряют эмоциональные триггеры и экспертную глубину.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Showcase (Asymmetric) -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="flex flex-col lg:flex-row items-center gap-20">
+<div class="lg:w-1/2 order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img class="rounded-3xl w-full h-64 object-cover" data-alt="professional copywriter working on a laptop in a modern brightly lit workspace with plants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiU-KWw_mtGLBphF6jA0J9Tk6mNYa-ATnvBqQsTZKgZYpNOPZahinUrQxxe5Da5dR5aMlVLIPdJxDkTI3DGcbRYXj3gXg2XTA5NvxgVuZ-1hSq_X5vfxXftjpUR3vw3eiFIIVipESwECuUM1oazg9s6GM-OEsudMcjsfsMFiy_BBo4mWU4TRRrXbCGhSp66ysqWnZOOlIONZGzq9ZP8ObIMfOMtCv3X5ELp5bOILE0_U4sNvXK4fF_jh4JbzG0cbJfUp9184JzvI4"/>
+<div class="bg-indigo-600 p-8 rounded-3xl text-white">
+<h4 class="text-2xl font-bold mb-2">99%</h4>
+<p class="text-sm opacity-80">Точность прохождения антиплагиата</p>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-white p-8 rounded-3xl shadow-xl shadow-indigo-100/20 border border-outline-variant/10">
+<span class="material-symbols-outlined text-primary mb-4" data-icon="auto_fix_high" style="font-variation-settings: 'FILL' 1;">auto_fix_high</span>
+<h4 class="font-bold">LSI Оптимизация</h4>
+<p class="text-xs text-on-surface-variant mt-2">Внедрение скрытых семантических связей</p>
+</div>
+<img class="rounded-3xl w-full h-80 object-cover" data-alt="abstract visualization of neural network connections with glowing indigo lines on a deep blue background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzRs_QnvqcX43bku9NIhz1AHkN2ZXoMepgFeQDMzfeG46EMs3IIG69JfpaMRqud-Ye7mbjDiFAUTA9YAJ4h_9TU4mcqs2N4SZdvO92nXUHKFiKmgVpVq8YrJaFL3jOXcHfDF5qg1G18WUjtsv5JjHLYkISS3H2rV3CbIJ75D5bdbmIfQlYsfj1qGknFOQvtcmSLa027wSR_UowFXCxUvS6DqZD65tA5yaPMhjhA7_e7OlYCKUoZwJKwu3kqU5zQ-RFUrIWnQhk040"/>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 order-1 lg:order-2">
+<h2 class="text-4xl font-extrabold tracking-tight mb-8">Точность архитектора в каждом слове</h2>
+<p class="text-on-surface-variant mb-6 text-lg leading-relaxed">
+                        Мы не просто перефразируем. Наша система PrecisionAI анализирует контекст, исправляет логические ошибки GPT и обогащает текст экспертными терминами, которые ищут алгоритмы Text.ru и Advego.
+                    </p>
+<ul class="space-y-6">
+<li class="flex gap-4 items-start">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white text-[16px]" data-icon="done">done</span>
+</div>
+<div>
+<span class="font-bold block">Глубокая переработка</span>
+<span class="text-sm text-on-surface-variant">Полная замена узнаваемых паттернов ИИ на авторский стиль.</span>
+</div>
+</li>
+<li class="flex gap-4 items-start">
+<div class="mt-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-white text-[16px]" data-icon="done">done</span>
+</div>
+<div>
+<span class="font-bold block">SEO-безопасность</span>
+<span class="text-sm text-on-surface-variant">Контент индексируется и ранжируется как полностью уникальный.</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="bg-slate-900 rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">Готовы масштабировать контент без рисков?</h2>
+<p class="text-slate-400 text-lg mb-10 max-w-2xl mx-auto">Начните использовать мощь ИИ правильно. Первая проверка за наш счет.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary hover:bg-primary-container text-white px-10 py-4 rounded-xl font-bold text-lg transition-all">
+                            Проверить уникальность сейчас
+                        </button>
+<button class="bg-white/10 hover:bg-white/20 text-white backdrop-blur-md px-10 py-4 rounded-xl font-bold text-lg transition-all border border-white/20">
+                            Демо-доступ
+                        </button>
+</div>
+</div>
+<!-- Background texture -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#4648d4 1px, transparent 1px); background-size: 30px 30px;"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-16 px-8 mt-24">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 max-w-7xl mx-auto">
+<div class="col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<span class="material-symbols-outlined text-indigo-600 dark:text-indigo-400 text-xl" data-icon="architecture">architecture</span>
+<span class="text-lg font-bold text-slate-900 dark:text-white">PrecisionAI</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm max-w-xs mb-6">
+                    © 2024 PrecisionAI. Built for precision. Платформа для создания безупречного контента.
+                </p>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4">Solutions</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Expert</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">SEO</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4">Product</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Plagiarism</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Competitors</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white mb-4">Resources</h5>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">Pricing</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 text-sm hover:text-slate-900 dark:hover:text-slate-100 transition-all" href="#">FAQ</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Контент Завод - Автоответчик</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 8px 32px -4px rgba(25, 28, 33, 0.06);
+        }
+        .glass-header {
+            backdrop-filter: blur(24px);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+            color: #191c21;
+        }
+        h1, h2, h3, .brand-text {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e1e2ea",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c2c6d4",
+                        "surface-container-highest": "#e1e2ea",
+                        "secondary-fixed-dim": "#b8c9d8",
+                        "surface": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c21",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#50606d",
+                        "on-tertiary-fixed": "#3b0900",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#394955",
+                        "on-background": "#191c21",
+                        "surface-container": "#ecedf6",
+                        "background": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbd1",
+                        "primary": "#00488d",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a8c8ff",
+                        "on-primary-fixed-variant": "#00468b",
+                        "secondary-container": "#d1e2f1",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "surface-bright": "#f9f9ff",
+                        "inverse-on-surface": "#eff0f8",
+                        "on-primary-fixed": "#001b3d",
+                        "on-secondary-fixed": "#0d1d28",
+                        "on-surface-variant": "#424752",
+                        "surface-tint": "#005db5",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "outline": "#727783",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#b33000",
+                        "tertiary": "#892300",
+                        "on-tertiary-fixed-variant": "#862200",
+                        "inverse-primary": "#a8c8ff",
+                        "surface-container-high": "#e7e8f0",
+                        "surface-dim": "#d8dae2",
+                        "surface-container-low": "#f2f3fb",
+                        "secondary-fixed": "#d4e5f4",
+                        "on-tertiary-container": "#ffd1c5",
+                        "on-primary-container": "#cadcff",
+                        "inverse-surface": "#2e3036",
+                        "primary-container": "#005fb8",
+                        "on-secondary-container": "#556572"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff]/80 dark:bg-[#191c21]/80 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#44474e] dark:text-[#c2c6d4] active:scale-95 transition-transform" data-icon="grid_view">grid_view</button>
+<span class="text-xl font-extrabold text-[#191c21] dark:text-[#f9f9ff] font-headline tracking-tight">Контент Завод</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="professional portrait of a creative director in a minimalist studio setting with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYA7sO6unHGJRTcwGjdTsUpvAeVrLtKMOcbKsNdmrRi7n4J6uJEkjp0t-0ZtoRivWYvg-2qbiXyP7V5AoztC7vSWb4wSaAC7RYNCsA2r2iSWE3anYhMfAZcB9FXZ-aDRLIX0vxGjSpn8fteSPNs0otetaJEWIFs9PwSQtSTLIrYi6jZlPKFliTBGeTWbENAk5OR9WuKiMh03VcQM7WcOgs3Zw__46cCBVWdPPXl83BTco9N5MZND8tx2ADwcaAroqY_x_dsejf1mc"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-5xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<h1 class="text-[3.5rem] font-extrabold font-headline leading-tight tracking-tighter mb-4 text-on-surface">
+                Автоответчик <span class="text-primary">Instagram</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-2xl font-body">
+                Управляйте вовлеченностью в реальном времени. Настройте автоматические реакции на комментарии и личные сообщения за считанные минуты.
+            </p>
+</section>
+<!-- Bento Grid Actions -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<!-- Main CTA -->
+<button class="md:col-span-2 relative overflow-hidden group bg-gradient-to-br from-primary to-primary-container p-8 rounded-full text-left transition-all active:scale-[0.98]">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-on-primary text-4xl mb-4" data-icon="magic_button">magic_button</span>
+<h3 class="text-2xl font-headline font-bold text-on-primary mb-2">Создать автоответчик</h3>
+<p class="text-on-primary/80 font-body text-sm max-w-xs">Запустите новый сценарий взаимодействия с вашей аудиторией прямо сейчас.</p>
+</div>
+<div class="absolute right-0 bottom-0 opacity-10 transform translate-y-4 translate-x-4 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[160px]" data-icon="bolt">bolt</span>
+</div>
+</button>
+<!-- Notifications Toggle Card -->
+<div class="bg-surface-container-low p-8 rounded-full flex flex-col justify-between border-b-2 border-transparent hover:border-primary transition-all">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="notifications_active">notifications_active</span>
+<div class="w-12 h-6 bg-surface-container-highest rounded-full p-1 flex items-center cursor-pointer">
+<div class="w-4 h-4 bg-primary rounded-full translate-x-6 transition-transform"></div>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-headline font-bold text-on-surface mb-1">Включить уведомления</h3>
+<p class="text-xs text-on-surface-variant font-body">Будьте в курсе каждой отработки правила.</p>
+</div>
+</div>
+</div>
+<!-- Tool Selection Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+<!-- Comment Autoresponder -->
+<div class="bg-surface-container-lowest p-8 rounded-full editorial-shadow flex gap-6 items-center group cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" data-icon="add_comment">add_comment</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Автоответчик комментариев</h4>
+<p class="text-sm text-on-surface-variant font-body">Ответы на ключевые слова под постами</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline-variant group-hover:text-primary transition-colors" data-icon="arrow_forward_ios">arrow_forward_ios</span>
+</div>
+<!-- Message Autoresponder -->
+<div class="bg-surface-container-lowest p-8 rounded-full editorial-shadow flex gap-6 items-center group cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="w-16 h-16 rounded-full bg-tertiary-container/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="forum">forum</span>
+</div>
+<div>
+<h4 class="text-xl font-headline font-bold text-on-surface">Автоответчик сообщений</h4>
+<p class="text-sm text-on-surface-variant font-body">Автоматизация Direct-сообщений</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-outline-variant group-hover:text-primary transition-colors" data-icon="arrow_forward_ios">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Rules Section (Editorial Style) -->
+<section>
+<div class="flex items-end justify-between mb-8">
+<div>
+<h2 class="text-3xl font-headline font-extrabold text-on-surface">Активные правила</h2>
+<div class="h-1 w-12 bg-primary mt-2"></div>
+</div>
+<button class="text-sm font-label font-semibold text-primary flex items-center gap-1 hover:underline">
+                    Все правила <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</button>
+</div>
+<!-- Content Feed Card Pattern -->
+<div class="space-y-4">
+<div class="bg-surface-container-lowest rounded-full overflow-hidden flex items-center editorial-shadow hover:translate-y-[-2px] transition-transform">
+<div class="w-24 h-24 bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="alternate_email" style="font-variation-settings: 'FILL' 1;">alternate_email</span>
+</div>
+<div class="flex-grow pl-8 py-4">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] font-bold tracking-widest uppercase text-tertiary">Live</span>
+<h5 class="text-lg font-headline font-bold text-on-surface">Скидка по слову "ХОЧУ"</h5>
+</div>
+<p class="text-sm text-on-surface-variant font-body">Отправка ссылки на курс в Директ при комментарии</p>
+</div>
+<div class="pr-8 flex flex-col items-end">
+<span class="text-2xl font-headline font-extrabold text-primary">1,248</span>
+<span class="text-[11px] font-medium text-outline uppercase tracking-wider">срабатываний</span>
+</div>
+<div class="h-24 w-2 bg-primary"></div>
+</div>
+<!-- Empty State / Welcome Banner as Secondary Pattern -->
+<div class="bg-surface-container-low border-2 border-dashed border-outline-variant/30 rounded-[2rem] p-12 text-center">
+<span class="material-symbols-outlined text-outline-variant text-6xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+<h3 class="text-2xl font-headline font-bold text-on-surface mb-2">Готовы масштабироваться?</h3>
+<p class="text-on-surface-variant font-body max-w-md mx-auto mb-6">Создайте больше правил для автоматизации рутины и сосредоточьтесь на создании контента.</p>
+<button class="px-8 py-3 bg-on-surface text-surface rounded-full font-label font-bold text-sm active:scale-95 transition-all">
+                        Добавить новое правило
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#ffffff] dark:bg-[#1c1b1f] rounded-t-3xl z-50 shadow-[0_-8px_32px_-4px_rgba(25,28,33,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="index.html">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Обзор</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="posts.html">
+<span class="material-symbols-outlined" data-icon="article">article</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Контент</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="analytics.html">
+<span class="material-symbols-outlined" data-icon="event_repeat">event_repeat</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">План</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#f2f3fb] text-[#005FB8] rounded-2xl px-5 py-1.5 transition-all active:scale-90 duration-150" href="accounts.html">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Статистика</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="settings" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Настройки</span>
+</a>
+</nav>
+</body></html>

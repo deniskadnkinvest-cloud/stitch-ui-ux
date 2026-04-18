@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e1e2ea",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c2c6d4",
+                        "surface-container-highest": "#e1e2ea",
+                        "secondary-fixed-dim": "#b8c9d8",
+                        "surface": "#f9f9ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c21",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#50606d",
+                        "on-tertiary-fixed": "#3b0900",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#394955",
+                        "on-background": "#191c21",
+                        "surface-container": "#ecedf6",
+                        "background": "#f9f9ff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdbd1",
+                        "primary": "#00488d",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a8c8ff",
+                        "on-primary-fixed-variant": "#00468b",
+                        "secondary-container": "#d1e2f1",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "surface-bright": "#f9f9ff",
+                        "inverse-on-surface": "#eff0f8",
+                        "on-primary-fixed": "#001b3d",
+                        "on-secondary-fixed": "#0d1d28",
+                        "on-surface-variant": "#424752",
+                        "surface-tint": "#005db5",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "outline": "#727783",
+                        "on-error": "#ffffff",
+                        "tertiary-container": "#b33000",
+                        "tertiary": "#892300",
+                        "on-tertiary-fixed-variant": "#862200",
+                        "inverse-primary": "#a8c8ff",
+                        "surface-container-high": "#e7e8f0",
+                        "surface-dim": "#d8dae2",
+                        "surface-container-low": "#f2f3fb",
+                        "secondary-fixed": "#d4e5f4",
+                        "on-tertiary-container": "#ffd1c5",
+                        "on-primary-container": "#cadcff",
+                        "inverse-surface": "#2e3036",
+                        "primary-container": "#005fb8",
+                        "on-secondary-container": "#556572"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-32">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff]/80 dark:bg-[#191c21]/80 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<div class="p-2 rounded-full hover:bg-[#f2f3fb] transition-colors active:scale-95 duration-200 cursor-pointer">
+<span class="material-symbols-outlined text-[#44474e]">grid_view</span>
+</div>
+<h1 class="text-xl font-extrabold text-[#191c21] dark:text-[#f9f9ff] font-['Manrope'] tracking-tight">Контент Завод</h1>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border-2 border-primary/10">
+<img alt="User Profile" class="w-full h-full object-cover" data-alt="Close-up portrait of a professional male digital creator in a minimalist studio setting with soft directional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA021MwOG-qNdkjHx2ShisJ4P6RU21AvZc_klPO7qX-IUKdn9erQGdf00cuUYo-CHrOZUk3Eiz-TnyMO1CrGYQEIaQYNS0UV4ceOaR6J9H54g5o1qz3z6zEKDQo_ruoyvXjV3FZOHXFEbMYBqE7YFiKh8ROuvAL-xWJVqdGno7lharn0L2EOcAsLzzB84NpaOM5g8xdECara0npzr_hC34PJCzCj71cUzlYteZQgfFh24gmuJ_O3Z6jGYEFY0fLMlVSRx5RGfcmBOU"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-4xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<h2 class="text-4xl font-extrabold tracking-tight mb-2">Аккаунты</h2>
+<p class="text-on-surface-variant font-medium">Управляйте своими медиа-площадками и отслеживайте статус подключения.</p>
+</section>
+<!-- Connectivity Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Instagram Card -->
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col justify-between transition-all hover:translate-y-[-4px] relative overflow-hidden group">
+<!-- Platform Badge Bleed -->
+<div class="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">photo_camera</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-8">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">photo_camera</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-[#e8f5e9] text-[#2e7d32] text-xs font-bold uppercase tracking-wider">Активен</div>
+</div>
+<h3 class="text-2xl font-bold mb-1">instagram_factory</h3>
+<p class="text-on-surface-variant text-sm font-medium">24.5k подписчиков</p>
+</div>
+<button class="mt-12 text-sm font-bold text-primary flex items-center gap-2 group/btn">
+                    Настройки <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- YouTube Card -->
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col justify-between transition-all hover:translate-y-[-4px] relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">play_circle</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-8">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-3xl">play_circle</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-[#e8f5e9] text-[#2e7d32] text-xs font-bold uppercase tracking-wider">Активен</div>
+</div>
+<h3 class="text-2xl font-bold mb-1">Content Zavod Official</h3>
+<p class="text-on-surface-variant text-sm font-medium">102k подписчиков</p>
+</div>
+<button class="mt-12 text-sm font-bold text-primary flex items-center gap-2 group/btn">
+                    Настройки <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<!-- TikTok Card -->
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 flex flex-col justify-between transition-all hover:translate-y-[-4px] relative overflow-hidden group">
+<div class="absolute -right-4 -top-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-[120px]">music_note</span>
+</div>
+<div class="relative z-10">
+<div class="flex items-center justify-between mb-8">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-3xl">music_note</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-error-container text-error text-xs font-bold uppercase tracking-wider">Ошибка</div>
+</div>
+<h3 class="text-2xl font-bold mb-1">zavod_shorts</h3>
+<p class="text-error text-sm font-medium">Требуется авторизация</p>
+</div>
+<button class="mt-12 text-sm font-bold text-error flex items-center gap-2 group/btn">
+                    Переподключить <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">refresh</span>
+</button>
+</div>
+<!-- Add New Platform CTA -->
+<button class="bg-surface-container-low border-2 border-dashed border-outline-variant/30 rounded-[2rem] p-8 flex flex-col items-center justify-center gap-4 transition-all hover:bg-surface-container-high group active:scale-[0.98]">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">add</span>
+</div>
+<div class="text-center">
+<h3 class="text-xl font-bold">Подключить новую платформу</h3>
+<p class="text-on-surface-variant text-sm mt-1">Добавьте Telegram, VK или Pinterest</p>
+</div>
+</button>
+</div>
+<!-- Analytics Teaser -->
+<section class="mt-16 bg-surface-container-low rounded-[2.5rem] p-10 flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1">
+<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary/10 text-tertiary text-xs font-bold mb-4">НОВОЕ</span>
+<h2 class="text-3xl font-extrabold mb-4 leading-tight">Общая статистика по всем платформам</h2>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Получайте сводные отчеты о вовлеченности и росте аудитории со всех ваших аккаунтов в одном окне.</p>
+<div class="flex gap-4">
+<div class="bg-surface-container-lowest px-6 py-4 rounded-2xl">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-1">Охват</p>
+<p class="text-2xl font-extrabold text-primary">1.2M</p>
+</div>
+<div class="bg-surface-container-lowest px-6 py-4 rounded-2xl">
+<p class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-1">ER</p>
+<p class="text-2xl font-extrabold text-tertiary">4.8%</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-3xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
+<img alt="Analytics Dashboard" class="w-full h-full object-cover" data-alt="Abstract vibrant digital dashboard visualization with blue and purple glowing charts and data points on a dark sleek interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2RnCsl0_OquP1Jtitj6uufF3Km1LS3ckzzqbvAU_wrkwT5DxESfUPahcuqO4BNfVBfp3jxyPbdowKQq6mFtCQ-L7uFvMCbksaQwZb89-k1_mfBxM8bqJbxiUAOs6Xk8XK4PaEPm1fV8KiYnI3hCBmnrnekV22U6HOU81qw8koERSf1icoOAKUzi-2mP1HZn8FxSrsdD07ZWJxfETUFx6StEfrar7cVFS0Yr5zOsb6qdipRi3HCdLx-sVHYdXH4Fzpl71gXvKDFF0"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar Shell -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#ffffff] dark:bg-[#1c1b1f] rounded-t-3xl z-50 shadow-[0_-8px_32px_-4px_rgba(25,28,33,0.06)]">
+<div class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Обзор</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">article</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Контент</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">event_repeat</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">План</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#44474e] dark:text-[#c2c6d4] hover:opacity-80 active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Статистика</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-[#f2f3fb] dark:bg-[#e1e2ea] text-[#005FB8] rounded-2xl px-5 py-1.5 active:scale-90 duration-150 cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide">Настройки</span>
+</div>
+</nav>
+</body></html>

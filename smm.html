@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Precision Architect | SMM AI Content</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary": "#575992",
+                    "surface-container-low": "#f2f3f9",
+                    "on-secondary-container": "#494b83",
+                    "primary-fixed": "#e1e0ff",
+                    "on-surface-variant": "#464554",
+                    "background": "#f8f9ff",
+                    "outline": "#767586",
+                    "surface-container": "#eceef3",
+                    "tertiary-container": "#b55d00",
+                    "secondary-fixed-dim": "#c0c1ff",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#e1e0ff",
+                    "primary": "#4648d4",
+                    "on-primary-fixed": "#07006c",
+                    "inverse-on-surface": "#eff0f6",
+                    "on-surface": "#191c20",
+                    "on-primary": "#ffffff",
+                    "tertiary": "#904900",
+                    "on-error-container": "#93000a",
+                    "surface-dim": "#d8dae0",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f8f9ff",
+                    "inverse-primary": "#c0c1ff",
+                    "surface-container-highest": "#e1e2e8",
+                    "on-tertiary-container": "#fffbff",
+                    "on-secondary-fixed-variant": "#404178",
+                    "on-tertiary-fixed": "#301400",
+                    "on-primary-container": "#fffbff",
+                    "primary-fixed-dim": "#c0c1ff",
+                    "tertiary-fixed-dim": "#ffb783",
+                    "on-secondary-fixed": "#13144a",
+                    "secondary-container": "#bdbefe",
+                    "surface-variant": "#e1e2e8",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdcc5",
+                    "primary-container": "#6063ee",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#2f2ebe",
+                    "on-background": "#191c20",
+                    "surface-tint": "#494bd6",
+                    "inverse-surface": "#2e3135",
+                    "on-tertiary-fixed-variant": "#703700",
+                    "surface-bright": "#f8f9ff",
+                    "outline-variant": "#c7c4d7",
+                    "surface-container-high": "#e7e8ee",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter", "sans-serif"],
+                    "body": ["Inter", "sans-serif"],
+                    "label": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl">
+<div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-indigo-600" data-icon="architecture">architecture</span>
+<span class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50">Precision Architect</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-indigo-600 dark:text-indigo-400 font-semibold border-b-2 border-indigo-600 font-sans text-sm tracking-tight transition-colors" href="#">Главная</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors px-2 py-1 rounded font-sans text-sm font-medium tracking-tight" href="#how">Как это работает</a>
+<a class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors px-2 py-1 rounded font-sans text-sm font-medium tracking-tight" href="#pricing">Тарифы</a>
+</nav>
+<button class="bg-primary text-on-primary px-5 py-2 rounded-xl text-sm font-medium active:scale-95 duration-200 transition-all shadow-lg shadow-primary/20">Get Started</button>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="pt-32 pb-20 px-6 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 space-y-8">
+<h1 class="text-5xl md:text-6xl font-black tracking-tight leading-[1.1] text-on-surface">
+                        Ведёте несколько аккаунтов? <span class="text-primary">ИИ напишет контент</span> в голосе каждого клиента
+                    </h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Precision Architect адаптируется под TOV любого бренда. Увеличивайте количество клиентов, не теряя качества и аутентичности.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-semibold shadow-xl shadow-primary/25 hover:scale-[1.02] active:scale-95 transition-all">
+                            Попробовать на одном аккаунте
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-semibold hover:bg-surface-container-high transition-all">
+                            Смотреть демо
+                        </button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="relative z-10 w-full max-w-md mx-auto aspect-[4/5] bg-surface-container-lowest rounded-3xl shadow-2xl shadow-primary/10 p-6 flex flex-col gap-4 border border-outline-variant/10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="close up of hot latte art in a white ceramic cup with steam and warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCje05d987Lmj4JDzNw8UZuaVLMVA_G3IUO2OJsELLDav_zZBS26ZCXW0y1gjzCDC_sJ4mKaoW4qLMuPzPVWBf-rtiZlGKPuRmHDgx_a1X2sldFnMJfeT05h0CTqbf4kKN2tWeY_IKk6EszsdIf1f2wp6N87GouF_vxEMi8rHmQX2EvBeXj4vFwL5-QjGwYyuYkvBKNS4myulw5C6fSXltjylq0ozWwfgg53Br7dnnoxfI60GIxwJMUP09_-7gau43fXEXetOUWCP8"/>
+</div>
+<div>
+<p class="text-sm font-bold">@coffeeshop_msk</p>
+<p class="text-xs text-on-surface-variant">Moscow, Russia</p>
+</div>
+</div>
+<span class="material-symbols-outlined">more_horiz</span>
+</div>
+<div class="flex-1 rounded-2xl overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="modern minimalist cafe interior with wooden tables and sunlight streaming through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbKKv4gNuKxFhWgSbQ3vK-EufbI8KSBvhMOePijqtHcLK4FJWkh23y8dAtUKz7DnGhRBcTtpwXKPxrmjvWTBtq1JNtp0lP4u5i5go1S8K9utqqdAyIw98fO9shKnSvEWN6hi2bH8QxD27Ui_HOG9GBJgnaZVP6qsHGV3VGWUEGVu-jxc7xbO_7LtbSPkl__T4a0w3-gpJk1uB6JS3iZhiPRgrRZr6Xbd5ufw3pePMn9mNm4haC_poTdA1ACY5IAw91RiX43R9mUeI"/>
+</div>
+<div class="space-y-2">
+<div class="flex gap-4">
+<span class="material-symbols-outlined">favorite</span>
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="material-symbols-outlined">send</span>
+</div>
+<p class="text-sm">
+<span class="font-bold">@coffeeshop_msk</span> Доброе утро начинается не с кофе, а с правильной атмосферы...
+                            </p>
+<div class="h-8 bg-primary/5 rounded-lg flex items-center px-3 border border-primary/10">
+<span class="text-[10px] font-bold text-primary tracking-widest uppercase">AI GENERATED CAPTION</span>
+</div>
+</div>
+</div>
+<!-- Decorative blobs -->
+<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 blur-[80px] rounded-full -z-0"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-secondary/10 blur-[60px] rounded-full -z-0"></div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black tracking-tight mb-4">Узнаёте себя?</h2>
+<p class="text-on-surface-variant max-w-lg mx-auto">Рутина убивает творчество. Мы решаем три главные боли SMM-специалиста.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-3xl transition-transform hover:-translate-y-2 duration-300">
+<div class="text-4xl mb-6">📉</div>
+<h3 class="text-xl font-bold mb-4">Нет масштаба</h3>
+<p class="text-on-surface-variant leading-relaxed">Вы не можете взять 10-го клиента, потому что 24 часа в сутки уходят на написание постов для текущих 5.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-3xl transition-transform hover:-translate-y-2 duration-300">
+<div class="text-4xl mb-6">🤖</div>
+<h3 class="text-xl font-bold mb-4">Безликий контент</h3>
+<p class="text-on-surface-variant leading-relaxed">Обычные нейросети пишут одинаково «пластиковые» тексты. Клиенты видят подвох и теряют доверие.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-3xl transition-transform hover:-translate-y-2 duration-300">
+<div class="text-4xl mb-6">🤐</div>
+<h3 class="text-xl font-bold mb-4">«Не мой стиль»</h3>
+<p class="text-on-surface-variant leading-relaxed">Клиент постоянно просит переделать, потому что ИИ не понимает его уникальный юмор или манеру общения.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="py-24 px-6" id="how">
+<div class="max-w-5xl mx-auto">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-black tracking-tight mb-12">Ваш новый рабочий процесс</h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<span class="text-5xl font-black text-primary/20 shrink-0">01</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Обучение стилю</h4>
+<p class="text-on-surface-variant">Загрузите 5 последних постов клиента. ИИ мгновенно анализирует лексику, длину предложений и эмодзи.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-5xl font-black text-primary/20 shrink-0">02</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Генерация тем</h4>
+<p class="text-on-surface-variant">Получите контент-план на неделю за 30 секунд на основе инфоповодов и специфики ниши.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="text-5xl font-black text-primary/20 shrink-0">03</span>
+<div>
+<h4 class="text-xl font-bold mb-2">Публикация</h4>
+<p class="text-on-surface-variant">Редактируйте, если нужно, и отправляйте пост в работу. Каждый текст звучит так, будто его писал человек.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-4 rounded-[2rem]">
+<img class="rounded-[1.5rem] w-full shadow-lg" data-alt="close-up of a high-end tablet screen showing professional social media management dashboard with analytics graphs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY49NqDn_TFwYGi5sP0s45dTGbTkHmnGd37iesY2t8RU93MZprH-T59O3uqAVM0LQvS0OcolUfWejzwledd2EhleIh2eMr8Mu4ewFC47Xf-QpyiReIAFVDi85f2__cERsVigVSdk-unFbqGL9wfiMNoaISjCjwRhIDGYEFDdJcL_tGhM0Jec4Zq0lYCoAL2G8udFHyTpPLYSb6GAGBO97J9UEs6p0PgUWU54wETXacj4kgaUp9y0N2Au4IHJdV6kv4QCWGyTY9cMA"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Examples Section (Bento Grid) -->
+<section class="py-24 bg-on-surface text-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-16">
+<div>
+<p class="text-primary-fixed font-bold tracking-widest text-xs uppercase mb-4">Gallery</p>
+<h2 class="text-4xl font-black tracking-tight">Реальные примеры постов</h2>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-surface-container-highest flex items-center justify-center hover:bg-surface/10 transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-surface-container-highest flex items-center justify-center hover:bg-surface/10 transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid md:grid-cols-4 gap-6">
+<div class="md:col-span-2 bg-surface-container-lowest/10 p-8 rounded-3xl border border-surface/5 flex flex-col justify-between aspect-square md:aspect-auto">
+<div class="mb-8">
+<span class="bg-primary/20 text-primary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Beauty Tech</span>
+<p class="text-xl font-medium leading-relaxed italic">"Уход за кожей — это не рутина, это диалог с собой. Наша новая сыворотка говорит на языке сияния..."</p>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary"></div>
+<p class="text-sm font-bold opacity-80">SkinCare Pro</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest/10 p-8 rounded-3xl border border-surface/5 flex flex-col justify-between">
+<div>
+<span class="bg-tertiary-container/20 text-tertiary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Crypto</span>
+<p class="text-sm opacity-80 leading-relaxed">Разбираем почему BTC держится на уровне сопротивления. Спойлер: киты не спят.</p>
+</div>
+<p class="text-xs font-bold mt-4">Finance.Hub</p>
+</div>
+<div class="bg-surface-container-lowest/10 p-8 rounded-3xl border border-surface/5 flex flex-col justify-between">
+<div>
+<span class="bg-secondary/20 text-secondary-fixed px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">Education</span>
+<p class="text-sm opacity-80 leading-relaxed">3 способа выучить 100 слов за вечер. Метод интервальных повторений в деле.</p>
+</div>
+<p class="text-xs font-bold mt-4">Edu_Master</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Case Study -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto bg-surface-container-low rounded-[3rem] p-12 md:p-20 relative overflow-hidden">
+<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-black tracking-tight mb-6">Катя вела 5 аккаунтов и выгорала...</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                            «Я тратила всё воскресенье на контент-планы. С Precision Architect я делегировала "черновую" работу ИИ, оставив себе только финальную редактуру и стратегию».
+                        </p>
+<div class="grid grid-cols-3 gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-2xl">
+<p class="text-2xl font-black text-primary">8</p>
+<p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">аккаунтов</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl">
+<p class="text-2xl font-black text-primary">25</p>
+<p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">мин/пост</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-2xl">
+<p class="text-2xl font-black text-primary">x1.6</p>
+<p class="text-[10px] uppercase font-bold text-on-surface-variant tracking-wider">доход</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<img class="rounded-3xl shadow-2xl" data-alt="portrait of a confident young professional woman smiling in a bright modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD09Cpi9BYeoXZ7GxhqeZxp0uuqPTtUfDCYHyA_Si7UvH3strPgv7C7zxXrVicIvZMUSptnW2eltjKjeWmjMVcHuBR_yHhcdx8YjSl6J7GGq1b42aGODfF2WG4KmOkkC8aAeVvLBssqqhDXeGK8WGh4p5wSgESSwh4SLGUzOtPzR1e3u2XiV85D4FFTmOtfD8agPb_-4ia_7Ckei9ahXevdQ07tzjfwedM574VZaShXaVzukd2cnYXiFw_BzBSa67gWQZQI3qnm-E"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Trend Widget -->
+<section class="py-12 px-6">
+<div class="max-w-4xl mx-auto glass border border-primary/10 rounded-full p-2 pl-8 flex flex-col md:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="local_fire_department" data-weight="fill">local_fire_department</span>
+<p class="text-sm font-medium"><span class="text-on-surface-variant">Сегодня горячая тема:</span> "Эстетика Old Money в SMM"</p>
+</div>
+<button class="bg-on-surface text-surface px-6 py-3 rounded-full text-sm font-bold hover:bg-on-surface/90 transition-all flex items-center gap-2">
+                    Написать пост по этому тренду <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Pricing -->
+<section class="py-24 px-6 bg-surface" id="pricing">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-black tracking-tight mb-4">Тарифы для любого масштаба</h2>
+<p class="text-on-surface-variant">Начните бесплатно, растите до агентства.</p>
+</div>
+<div class="grid md:grid-cols-4 gap-6">
+<!-- Start -->
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col">
+<h3 class="text-lg font-bold mb-2">Старт</h3>
+<p class="text-3xl font-black mb-6">0₽</p>
+<ul class="space-y-4 mb-8 flex-1 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> 1 аккаунт</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> 10 постов в мес</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> Базовый ИИ</li>
+</ul>
+<button class="w-full py-3 rounded-xl border border-outline-variant font-bold hover:bg-surface transition-all">Выбрать</button>
+</div>
+<!-- Growth -->
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col">
+<h3 class="text-lg font-bold mb-2">Рост</h3>
+<p class="text-3xl font-black mb-6">2 900₽</p>
+<ul class="space-y-4 mb-8 flex-1 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> 3 аккаунта</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> Безлимит постов</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> Анализ TOV</li>
+</ul>
+<button class="w-full py-3 rounded-xl border border-outline-variant font-bold hover:bg-surface transition-all">Выбрать</button>
+</div>
+<!-- Pro ⭐ -->
+<div class="bg-primary text-on-primary p-8 rounded-[2rem] flex flex-col shadow-2xl shadow-primary/30 relative scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-on-tertiary-fixed text-on-tertiary-fixed-variant px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Популярный</div>
+<h3 class="text-lg font-bold mb-2">Профи ⭐</h3>
+<p class="text-3xl font-black mb-6">5 500₽</p>
+<ul class="space-y-4 mb-8 flex-1 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check</span> 10 аккаунтов</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check</span> Генерация картинок</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check</span> Командный доступ</li>
+</ul>
+<button class="w-full py-4 rounded-xl bg-surface text-primary font-black hover:bg-surface-bright transition-all">Попробовать</button>
+</div>
+<!-- Agency -->
+<div class="bg-surface-container-low p-8 rounded-3xl flex flex-col">
+<h3 class="text-lg font-bold mb-2">Агентство</h3>
+<p class="text-3xl font-black mb-6">12 000₽</p>
+<ul class="space-y-4 mb-8 flex-1 text-sm text-on-surface-variant">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> ∞ аккаунтов</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> API доступ</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm text-primary">check</span> Личный менеджер</li>
+</ul>
+<button class="w-full py-3 rounded-xl border border-outline-variant font-bold hover:bg-surface transition-all">Связаться</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-3xl mx-auto">
+<h2 class="text-3xl font-black tracking-tight mb-12 text-center">Частые вопросы</h2>
+<div class="space-y-4">
+<div class="bg-surface-container-lowest rounded-2xl p-6 cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-bold">Безопасно ли это для Instagram?</h4>
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 cursor-pointer border-2 border-primary/10">
+<div class="flex justify-between items-center mb-4">
+<h4 class="font-bold">Сможет ли ИИ писать так же смешно, как я?</h4>
+<span class="material-symbols-outlined">remove</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Да! Наш алгоритм анализирует не только слова, но и структуру предложений, использование сарказма, специфических сленговых выражений и даже частоту определенных эмодзи.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 cursor-pointer">
+<div class="flex justify-between items-center">
+<h4 class="font-bold">Как быстро проходит обучение стилю?</h4>
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="bg-primary py-20 px-6">
+<div class="max-w-4xl mx-auto text-center space-y-8">
+<h2 class="text-4xl md:text-5xl font-black text-on-primary tracking-tight">Попробуйте на одном аккаунте — бесплатно</h2>
+<p class="text-on-primary/80 text-lg">Без привязки карты. Начните писать посты в 10 раз быстрее уже через 2 минуты.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-surface text-primary px-10 py-5 rounded-2xl font-black shadow-2xl hover:scale-105 active:scale-95 transition-all">Зарегистрироваться</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-slate-50 dark:bg-slate-900 border-t border-slate-200/15 dark:border-slate-800/15">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="text-lg font-black text-slate-900 dark:text-slate-50">Precision Architect</span>
+<p class="text-xs font-medium uppercase tracking-widest text-slate-500">© 2024 Precision Architect. Built for performance.</p>
+</div>
+<nav class="flex gap-6 flex-wrap justify-center">
+<a class="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-opacity hover:opacity-80" href="#">Product</a>
+<a class="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-opacity hover:opacity-80" href="#">Features</a>
+<a class="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-opacity hover:opacity-80" href="#">Pricing</a>
+<a class="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-opacity hover:opacity-80" href="#">Terms</a>
+<a class="text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-indigo-600 dark:hover:text-indigo-400 transition-opacity hover:opacity-80" href="#">Privacy</a>
+</nav>
+<div class="text-xs font-medium uppercase tracking-widest text-slate-500 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">language</span> English (US)
+            </div>
+</div>
+</footer>
+<!-- Floating WhatsApp -->
+<a class="fixed bottom-8 right-8 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-all z-[100]" href="#">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+</svg>
+</a>
+</body></html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#ecedf6",
+                        "surface": "#f9f9ff",
+                        "on-primary-fixed": "#001b3d",
+                        "secondary-fixed": "#d4e5f4",
+                        "surface-dim": "#d8dae2",
+                        "primary-container": "#005fb8",
+                        "on-primary-container": "#cadcff",
+                        "surface-container-highest": "#e1e2ea",
+                        "outline": "#727783",
+                        "on-secondary-container": "#556572",
+                        "primary": "#00488d",
+                        "inverse-on-surface": "#eff0f8",
+                        "secondary-container": "#d1e2f1",
+                        "surface-bright": "#f9f9ff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-container": "#ffd1c5",
+                        "primary-fixed": "#d6e3ff",
+                        "outline-variant": "#c2c6d4",
+                        "on-primary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "surface-container-high": "#e7e8f0",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface-tint": "#005db5",
+                        "secondary-fixed-dim": "#b8c9d8",
+                        "on-tertiary-fixed": "#3b0900",
+                        "on-secondary-fixed": "#0d1d28",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#00468b",
+                        "on-tertiary-fixed-variant": "#862200",
+                        "surface-container-low": "#f2f3fb",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e1e2ea",
+                        "tertiary": "#892300",
+                        "on-background": "#191c21",
+                        "inverse-primary": "#a8c8ff",
+                        "tertiary-fixed": "#ffdbd1",
+                        "tertiary-container": "#b33000",
+                        "on-error-container": "#93000a",
+                        "on-surface-variant": "#424752",
+                        "inverse-surface": "#2e3036",
+                        "tertiary-fixed-dim": "#ffb5a0",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c21",
+                        "primary-fixed-dim": "#a8c8ff",
+                        "on-secondary-fixed-variant": "#394955",
+                        "secondary": "#50606d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-glass {
+            background: rgba(249, 249, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen flex flex-col items-center justify-center overflow-x-hidden">
+<!-- Content Architect Shell Suppression: No TopAppBar or BottomNavBar on Auth screens -->
+<main class="w-full max-w-4xl px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- Left Column: Branding and Message -->
+<div class="flex flex-col space-y-8">
+<header class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-3xl">grid_view</span>
+</div>
+<h1 class="font-headline font-extrabold text-3xl tracking-tight text-on-background">Контент Завод</h1>
+</div>
+<div class="space-y-2">
+<h2 class="font-headline font-bold text-4xl lg:text-5xl text-primary tracking-tight leading-tight">
+                        Создавайте контент <br/>с умом.
+                    </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-sm">
+                        Добро пожаловать в профессиональную среду для управления медиа-архитектурой.
+                    </p>
+</div>
+</header>
+<div class="hidden md:block">
+<div class="bg-surface-container-low rounded-3xl p-8 relative overflow-hidden">
+<div class="relative z-10 space-y-4">
+<div class="flex -space-x-3">
+<img alt="User 1" class="w-10 h-10 rounded-full border-2 border-surface shadow-sm" data-alt="Portrait of a creative professional woman with a minimalist background, high-end photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJO_68Vu48LeOdEmlGa8MqoDvkkUQLQI-NsExTKOC4m5UCdiz_ZpeNhc2tmz5H3zY2_jfuGebiNPcXji6CSP_Omc_SZLzn7nWZ5oiVUsHR82DB2YBixda7T9upRm7grNhBTXU-mhQ8iC1noqanatpMjrOlIfJ_dtDgGu2vE7_srg4UqTu0TcXCmhZgHJzaZYVpL-9yK-3kby6hWVXr9R7ti--P7_YP2-um9tC3bhAU58R8as0EMntoBXZdpyjwxMf74QZ08zOkaeo"/>
+<img alt="User 2" class="w-10 h-10 rounded-full border-2 border-surface shadow-sm" data-alt="Portrait of a male digital creator, soft natural lighting, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbl9pXW6gnudSnDtkhyaJUK2fjVV0xeU1SwgZNE1BlxcoiBaxlI1USMyTjGApAe85NqjzrYShy4vu2hewyhD8bY92EsOC-P5dqHkgCwIFwxJsuU3WsYMdMC5Us6Bqew6dL73aAmDTEAYuW4tV8sP3cVgPUTfeU-nFhbQ9nGxK-Do70aHdhNemFkPD37KUqX9_oRlJBWYau726aMD4Qn9IBjY1bGJvyT8iaY-VS1enaJ1sPyjQWzLLmoO8L1xG3i3FsxWbhuZU2sHw"/>
+<img alt="User 3" class="w-10 h-10 rounded-full border-2 border-surface shadow-sm" data-alt="Close up of a young professional smiling, bright airy studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfmzh4sqA5WOWRgXbOnUgSrBpbiD4mfUaDeeUkX8CTfk2ljQ6Wquq9VI8IkJGKA8zFvja6WJa3WQz09BGEo_R4ilI5m5wJospFqFkFOPPy_b8n_aqgtNbXINGbEbCGsZZsfR8vdkyA-ymn-BX_7Ld9qOo0Gckuh7IRzm1qsMmJDPiDRcRRLz5cEG9iSqmpEUq3fFeTq6DBg9nkRlcHC9h-QaRWBRBszhSW5jh2lHw2ehOnArRPxbPepj7VncnVoR9Q5y7oyGexJ44"/>
+</div>
+<p class="font-label text-sm font-medium text-on-surface-variant">Присоединяйтесь к 12,000+ кураторам контента</p>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-gradient-to-br from-primary-fixed to-secondary-fixed opacity-50 blur-3xl"></div>
+</div>
+</div>
+</div>
+<!-- Right Column: Login Options -->
+<div class="w-full">
+<div class="bg-surface-container-lowest p-8 md:p-12 rounded-[2rem] shadow-[0_8px_32px_-4px_rgba(25,28,33,0.06)] space-y-8">
+<div class="space-y-1">
+<h3 class="font-headline font-bold text-2xl text-on-background">Авторизация</h3>
+<p class="font-label text-sm text-on-surface-variant">Выберите удобный способ входа</p>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<!-- Yandex (Red/White) -->
+<button class="flex items-center justify-between px-6 py-4 bg-white border border-outline-variant/20 rounded-2xl hover:bg-surface-container-low transition-all duration-200 active:scale-95 group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-[#FC3F1D] flex items-center justify-center text-white font-bold text-xl">Я</div>
+<span class="font-semibold text-on-surface">Yandex ID</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- VK (Blue) -->
+<button class="flex items-center justify-between px-6 py-4 bg-[#0077FF] text-white rounded-2xl hover:opacity-90 transition-all duration-200 active:scale-95 group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+<svg class="w-6 h-6 fill-white" viewbox="0 0 24 24"><path d="M15.072 2H8.928C3.12 2 2 3.12 2 8.928v6.144C2 20.88 3.12 22 8.928 22h6.144c5.808 0 6.928-1.12 6.928-6.928V8.928C22 3.12 20.88 2 15.072 2zm3.696 13.632c0 .24-.144.576-.432.72-.24.096-.576.048-.864-.144-1.296-.864-2.16-1.536-3.264-1.536s-1.44.816-.96 1.824c.048.096.048.144.048.192 0 .24-.144.432-.384.432h-1.008c-2.352 0-4.32-1.872-5.904-4.272C5.328 11.76 5 10.704 5 9.6c0-.24.192-.432.432-.432h1.536c.192 0 .384.144.432.336.528 1.44 1.152 2.736 1.92 3.84.288.432.528.528.72.528.24 0 .384-.144.384-.528V11.16c0-1.104-.192-1.584-1.248-1.728-.192-.048-.288-.144-.288-.24 0-.192.144-.384.432-.384h2.592c.24 0 .432.192.432.432v2.88c0 .384.096.528.288.528.192 0 .432-.096.72-.528.816-1.152 1.44-2.448 1.968-3.888.048-.144.192-.24.384-.24h1.68c.288 0 .432.144.432.336 0 .096-.048.24-.096.384-.528 1.152-1.296 2.448-2.112 3.312-.24.288-.336.432-.288.624.048.192.192.384.432.528 1.056.72 1.968 1.44 2.592 2.304.192.288.24.528.24.6z"></path></svg>
+</div>
+<span class="font-semibold">ВКонтакте</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Telegram (Light Blue) -->
+<button class="flex items-center justify-between px-6 py-4 bg-[#24A1DE] text-white rounded-2xl hover:opacity-90 transition-all duration-200 active:scale-95 group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+<svg class="w-6 h-6 fill-white" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1 .22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.11.02-1.93 1.23-5.46 3.62-.51.35-.98.52-1.4.51-.46-.01-1.35-.26-2.01-.48-.81-.27-1.45-.42-1.39-.89.03-.24.37-.48 1.02-.73 4-1.74 6.67-2.88 8.01-3.43 3.81-1.56 4.6-1.83 5.12-1.84.12 0 .38.03.55.17.14.11.18.27.2.4.02.08.02.24 0 .32z"></path></svg>
+</div>
+<span class="font-semibold">Telegram</span>
+</div>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Google (White/Multi-color) -->
+<button class="flex items-center justify-between px-6 py-4 bg-white border border-outline-variant/20 rounded-2xl hover:bg-surface-container-low transition-all duration-200 active:scale-95 group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+<svg class="w-6 h-6" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+</svg>
+</div>
+<span class="font-semibold text-on-surface">Google Account</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="pt-4 border-t border-outline-variant/10">
+<p class="text-center text-on-surface-variant text-sm px-4">
+                        Продолжая, вы соглашаетесь с <a class="text-primary font-semibold hover:underline" href="#">Условиями использования</a> и <a class="text-primary font-semibold hover:underline" href="#">Политикой конфиденциальности</a>.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Success Message / Toast (Hidden by default, shown conceptually for the UI) -->
+<div class="fixed bottom-12 left-1/2 -translate-x-1/2 bg-on-surface text-surface px-6 py-3 rounded-full flex items-center gap-3 shadow-2xl z-50 opacity-0 pointer-events-none">
+<span class="material-symbols-outlined text-tertiary">check_circle</span>
+<span class="font-label font-medium">Добро пожаловать в систему</span>
+</div>
+<!-- Background Decorative Elements -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
+<div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px]"></div>
+<div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-tertiary/5 blur-[120px]"></div>
+</div>
+</body></html>

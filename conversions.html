@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-variant": "#e1e2ea",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#c2c6d4",
+                    "surface-container-highest": "#e1e2ea",
+                    "secondary-fixed-dim": "#b8c9d8",
+                    "surface": "#f9f9ff",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#191c21",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#50606d",
+                    "on-tertiary-fixed": "#3b0900",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#394955",
+                    "on-background": "#191c21",
+                    "surface-container": "#ecedf6",
+                    "background": "#f9f9ff",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffdbd1",
+                    "primary": "#00488d",
+                    "on-primary": "#ffffff",
+                    "primary-fixed-dim": "#a8c8ff",
+                    "on-primary-fixed-variant": "#00468b",
+                    "secondary-container": "#d1e2f1",
+                    "tertiary-fixed-dim": "#ffb5a0",
+                    "surface-bright": "#f9f9ff",
+                    "inverse-on-surface": "#eff0f8",
+                    "on-primary-fixed": "#001b3d",
+                    "on-secondary-fixed": "#0d1d28",
+                    "on-surface-variant": "#424752",
+                    "surface-tint": "#005db5",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#d6e3ff",
+                    "outline": "#727783",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#b33000",
+                    "tertiary": "#892300",
+                    "on-tertiary-fixed-variant": "#862200",
+                    "inverse-primary": "#a8c8ff",
+                    "surface-container-high": "#e7e8f0",
+                    "surface-dim": "#d8dae2",
+                    "surface-container-low": "#f2f3fb",
+                    "secondary-fixed": "#d4e5f4",
+                    "on-tertiary-container": "#ffd1c5",
+                    "on-primary-container": "#cadcff",
+                    "inverse-surface": "#2e3036",
+                    "primary-container": "#005fb8",
+                    "on-secondary-container": "#556572"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body min-h-screen pb-24">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f9f9ff]/80 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-4">
+<button class="text-[#44474e] hover:bg-[#f2f3fb] p-2 rounded-full transition-colors active:scale-95 duration-200">
+<span class="material-symbols-outlined" data-icon="grid_view">grid_view</span>
+</button>
+<h1 class="text-xl font-extrabold text-[#191c21] font-headline tracking-tight">Контент Завод</h1>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center overflow-hidden border-2 border-primary-container">
+<img alt="User" data-alt="Close-up portrait of a professional male creator in a minimalist studio setting with soft side lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcHVxz9Q3vLmXW3QYUI-DXqmE97dUvg731FWxxMKJs_bcGQ64p4FmfQIzeHYRwbTZlS8BdmvMglYMqVuXyt03YakQQI0XZP1ln7EMcqkD-VEUOfZb7g54Xjn7CqacZ-50KDeOoQzn28qGEFh9lLxmdBZcsrl8KeOG_ebmkJzvWTE9PIQ8cnw9hywSHdZ_teN_86ITvHb1pZtl0AGM2opDQvH5QNnyd3NzPN9FOGu8fiJO-Ct2RFIe7C6_nOD7vMoosdyyaEB59U04"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-5xl mx-auto">
+<!-- Hero Header -->
+<section class="mb-12">
+<h2 class="text-4xl md:text-5xl font-extrabold font-headline text-on-surface tracking-tight mb-4">Статистика конверсий</h2>
+<p class="text-on-surface-variant max-w-2xl leading-relaxed">
+                Отслеживайте эффективность ваших публикаций и рекламных кампаний. Все данные синхронизируются в реальном времени.
+            </p>
+</section>
+<!-- Main Content Area: Asymmetric Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Left Column: Primary Empty State (The Central Block) -->
+<div class="md:col-span-8">
+<div class="bg-surface-container-low rounded-3xl p-12 min-h-[460px] flex flex-col items-center justify-center text-center">
+<div class="w-24 h-24 bg-surface-container-highest rounded-full flex items-center justify-center mb-8 shadow-[0_8px_32px_-4px_rgba(25,28,33,0.06)]">
+<span class="material-symbols-outlined text-primary text-5xl" data-icon="bar_chart_4_bars">bar_chart_4_bars</span>
+</div>
+<h3 class="text-2xl font-bold font-headline text-on-surface mb-3">Статистика конверсии недоступна</h3>
+<p class="text-on-surface-variant max-w-sm mb-8">
+                        Данные появятся после обработки постоплатной статистики. Мы уведомляем о готовности отчетов.
+                    </p>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3.5 rounded-full font-bold tracking-wide shadow-lg active:scale-95 duration-200">
+                        Обновить данные
+                    </button>
+</div>
+</div>
+<!-- Right Column: Contextual Info -->
+<div class="md:col-span-4 space-y-6">
+<!-- Info Card 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-tertiary" data-icon="info">info</span>
+<span class="text-sm font-bold font-headline uppercase tracking-widest text-on-surface-variant">Постоплата</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Статистика для моделей с постоплатой рассчитывается в конце отчетного периода после сверки всех транзакций.
+                    </p>
+</div>
+<!-- Bento-style Card 2 (Visual Asset) -->
+<div class="bg-surface-container-highest rounded-3xl overflow-hidden aspect-square relative group">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-700" data-alt="Abstract 3D data visualization with floating blue glass spheres and glowing interconnected lines on a dark professional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAStk_ozO_5IaMeIGO7W1LiLyfdRo3tWI0R-OFykjes26g4pysuqj6HpeQc2RQ6ZPfAHoU42PsAztlgG9WiAljPqXduNB9gptJbvhmWy4Lx2yYAAOBGGjp_ByXEwUWM2U2nPwSghRsNGfUWjvlVIejcEIG-nU7KWBlJmjS9Vv2LVd3MPZaTtVP1YocZsoVuZC-qR4nBuIYWixRnPfASR7dGEkOVwCN3iYPrrDSZa0TdqYKB4tJqeXSd-F9d8hn327FSkv_7FBR5Shs"/>
+<div class="absolute bottom-6 left-6 z-20">
+<p class="text-white font-headline font-bold text-lg leading-tight">Профессиональная<br/>аналитика</p>
+</div>
+</div>
+<!-- Info Card 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-3xl border-l-4 border-primary">
+<h4 class="font-bold text-on-surface mb-2">Нужна помощь?</h4>
+<p class="text-xs text-on-surface-variant mb-4">Если вы считаете, что данные должны быть доступны, свяжитесь с куратором.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-2 hover:gap-3 transition-all" href="#">
+                        Поддержка <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Active: Статистика) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center pt-2 pb-6 px-4 bg-[#ffffff] rounded-t-3xl z-50 shadow-[0_-8px_32px_-4px_rgba(25,28,33,0.06)]">
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="index.html">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide mt-1">Обзор</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="posts.html">
+<span class="material-symbols-outlined" data-icon="article">article</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide mt-1">Контент</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#f2f3fb] text-[#005FB8] rounded-2xl px-5 py-1.5 transition-all active:scale-90 duration-150" href="analytics.html">
+<span class="material-symbols-outlined" data-icon="event_repeat">event_repeat</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide mt-1">План</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="accounts.html">
+<span class="material-symbols-outlined" data-icon="analytics" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide mt-1">Статистика</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#44474e] hover:opacity-80 transition-all active:scale-90 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="font-['Inter'] text-[11px] font-medium tracking-wide mt-1">Настройки</span>
+</a>
+</nav>
+</body></html>
